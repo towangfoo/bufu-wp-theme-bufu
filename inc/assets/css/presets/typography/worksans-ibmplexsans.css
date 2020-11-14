@@ -1,0 +1,78 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.75em;
+    margin: 0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+}
+/* Headings--------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1.page-title {
+    font-size: 3.154rem;
+    letter-spacing: -2.27px;
+}
+
+h1.entry-title,
+h2.entry-title {
+    font-size: 1.875rem;
+    letter-spacing: -1.33px;
+}
+
+.navbar-brand {
+    padding-top: 0.25rem;
+}
+.navbar-brand>a {
+    font-family: "Work Sans", sans-serif;
+    text-transform: uppercase;
+}
+#masthead .navbar-nav>li a {
+    border-bottom-width: 0;
+    display: block;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: -1.15px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+div#page-sub-header h1 {
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: 0;
+    text-transform: none;
+}
+div#page-sub-header p {
+    max-width: 100%;
+}
+#secondary .widget-title {
+    font-family: "Work Sans", sans-serif;
+    text-transform: uppercase;
+}
+body:not(.post-type-archive-tribe_events) .entry-content {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+.entry-meta {
+    font-family: "Work Sans", sans-serif;
+    text-transform: uppercase;
+}
+.post-thumbnail {
+    margin-bottom: 1.875rem;
+}
+
+.badge {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+.sidebar .widget-title {
+    font-size: 1.171875rem;
+    letter-spacing: -0.75px;
+    font-family: "Work Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
