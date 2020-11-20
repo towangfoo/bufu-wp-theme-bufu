@@ -1202,6 +1202,13 @@ body:not(.theme-preset-active) footer#colophon {
   border-color: #f2f2f2;
 }
 
+.foogallery.foogallery-container {
+  margin: 2rem 0;
+}
+.foogallery.foogallery-container.fg-default.fg-gutter-10 {
+  margin-left: -10px;
+}
+
 /*--------------------------------------------------------------
 # Front page
 --------------------------------------------------------------*/
