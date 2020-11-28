@@ -7,6 +7,20 @@
  * @package BuschFunk
  */
 
+if ( ! function_exists( 'bufu_theme_no_thumbnail' ) ) :
+	/**
+     * Returns a HTML snippet for a no-thumbnail placeholder
+	 * @param string|null $label
+     * @return string
+	 */
+    function bufu_theme_no_thumbnail( $label = null ) {
+        if ( empty($label)) {
+            $label = __("No image", 'bufu-theme');
+        }
+        return "<span class=\"no-thumbnail-available\"><span>{$label}</span></span>";
+	}
+endif;
+
 if ( ! function_exists( 'bufu_theme_posted_on' ) ) :
 	/**
      * Prints HTML with meta information for the current post-date/time and author.

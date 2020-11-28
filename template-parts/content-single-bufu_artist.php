@@ -46,12 +46,48 @@ $profileImgHeight = 480;
 				?>
             </footer>
 
-            <div style="margin: 2rem 0; padding: 6rem 0; background-color: #b9d0f8; color: #0A246A; font-weight: 700; font-size: 2rem; text-align: center">
-                @TODO: Infoboxen hier:<br />
-                - Besetzung/Diskografie <br />
-                - Interviews <br />
-                - Featured Products
+            <?php
+                $albums = bufu_artists()->loadAlbumsOfArtist($post->ID, 'release');
+                if (count($albums) > 0) :
+
+            ?>
+            <div class="discography mt-5 mb-5">
+                <h2 class="second-title"><?php echo __("Discography", 'bufu-theme') ?></h2>
+                <?php foreach ($albums as $album) :
+					$albumUrl     = get_permalink($album);
+                    $shopUrl      = get_post_meta( $album->ID, '_bufu_artist_shopUrl', true);
+					$label        = get_post_meta( $album->ID, '_bufu_artist_albumLabel', true);
+					$releaseDate  = get_post_meta( $album->ID, '_bufu_artist_albumRelease', true);
+                    $thumbnail    = get_the_post_thumbnail($album, 'thumbnail', ['class' => 'w-100'] );
+					?>
+                    <article class="album" id="post-<?php $album->ID; ?>">
+                        <div class="row">
+                            <div class="col-3">
+                                <a href="<?php echo esc_url( $albumUrl ) ?>" rel="bookmark">
+                                <?php
+                                    if ($thumbnail) :
+                                        echo $thumbnail;
+                                    else :
+                                        echo bufu_theme_no_thumbnail();
+                                    endif;
+                                ?>
+                                </a>
+                            </div>
+                            <div class="col-9">
+                                <header class="album-header">
+                                    <h3 class="album-title"><?php echo $album->post_title ?></h3>
+                                    <p class="album-meta"><?php if (!empty($label)) echo trim($label) . "," ?> <?php echo $releaseDate ?></p>
+                                    <a href="<?php echo esc_url( $albumUrl ) ?>" class="btn btn-default btn-pill"><?php echo __("Details", 'bufu-theme') ?></a>
+                                <?php if (!empty($shopUrl)) : ?>
+                                    <a href="<?php echo esc_url( $shopUrl ) ?>" target="_blank" class="btn btn-primary btn-pill" data-external><?php echo __("Visit in shop", 'bufu-theme') ?></a>
+                                <?php endif; ?>
+                                </header>
+                            </div>
+                        </div>
+                    </article><!-- #post-## -->
+                <?php endforeach; ?>
             </div>
+            <?php endif; ?>
         </div>
         <aside class="col-lg-4" role="complementary">
             <?php if ( is_active_sidebar( 'sidebar-3' ) )  : ?>
