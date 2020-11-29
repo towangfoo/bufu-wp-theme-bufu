@@ -4656,7 +4656,7 @@ tbody.collapse.show {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0;
 }
 
@@ -4706,16 +4706,24 @@ tbody.collapse.show {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #333;
   border-bottom: 0;
+  color: #fff;
 }
 
 .card-header:first-child {
-  border-radius: calc(0 - 1px) calc(0 - 1px) 0 0;
+  border-radius: 0;
 }
 
 .card-header + .list-group .list-group-item:first-child {
   border-top: 0;
+}
+.card-header .btn {
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  font-size: 1.00rem;
+  padding-left: 0;ª
 }
 
 .card-footer {
