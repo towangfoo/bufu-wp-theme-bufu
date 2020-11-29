@@ -9,14 +9,19 @@
 
 $artistName = get_the_title();
 $permalink  = get_permalink();
+$thumbnail  = get_the_post_thumbnail(null, 'thumbnail', ['class' => 'w-100'] );
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="row">
         <div class="col-md-3">
+            <?php if ($thumbnail) : ?>
             <a href="<?php echo esc_url( $permalink ) ?>" rel="bookmark" title="<?php echo sprintf(__("Show profile of %s", 'bufu-theme'), $artistName) ?>">
-                <?php the_post_thumbnail( 'thumbnail', ['class' => 'w-100'] ); ?>
+                <?php echo $thumbnail ?>
             </a>
+            <?php else : ?>
+                <?php echo bufu_theme_no_thumbnail(__("No image", 'bufu-theme')) ?>
+            <?php endif;?>
         </div>
         <div class="col-md-9">
             <header class="entry-header">

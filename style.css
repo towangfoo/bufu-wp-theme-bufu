@@ -1214,7 +1214,7 @@ body:not(.theme-preset-active) footer#colophon {
   display: flex;
   -webkit-flex-flow: row;
   justify-content: space-around;
-  line-height: 5rem;
+  line-height: 4rem;
 }
 
 .no-thumbnail-available > span {
@@ -1233,6 +1233,11 @@ body:not(.theme-preset-active) footer#colophon {
   content:'';
   float: left;
   padding-top:100%;
+}
+
+.no-thumbnail-available.bg-dark > span {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 /*--------------------------------------------------------------
