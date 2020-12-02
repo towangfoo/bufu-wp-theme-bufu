@@ -33,11 +33,9 @@ h2.entry-title {
     text-transform: uppercase;
 }
 #masthead .navbar-nav>li a {
-    border-bottom-width: 0;
     display: block;
     font-family: "Work Sans", sans-serif;
     letter-spacing: -1.15px;
-    padding: 10px;
     font-weight: 500;
 }
 

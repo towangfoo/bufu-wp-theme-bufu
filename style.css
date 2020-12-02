@@ -273,6 +273,15 @@ header#masthead {
   height: 74px;
 }
 
+#masthead .navbar-nav > li a {
+  padding: 10px 10px 3px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: 5px;
+}
+#masthead .navbar-nav > li.current-menu-item a {
+  border-bottom-color: #ed7101;
+}
+
 #page-sub-header {
   position: relative;
   padding-top: 5rem;
