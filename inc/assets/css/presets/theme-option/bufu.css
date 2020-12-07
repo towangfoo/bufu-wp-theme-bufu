@@ -9531,7 +9531,7 @@ label,
 
 .list-group {
   font-size: 0.8203125rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .close {
@@ -9544,8 +9544,8 @@ label,
 }
 
 .alert {
-  font-size: 0.8203125rem;
-  font-weight: 300;
+  font-size: 0.94rem;
+  font-weight: 400;
   color: #fff;
 }
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-11-28 19:52+0100\n"
-"PO-Revision-Date: 2020-11-28 19:53+0100\n"
+"POT-Creation-Date: 2020-12-05 22:53+0100\n"
+"PO-Revision-Date: 2020-12-05 22:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -145,7 +145,11 @@ msgstr ""
 "Abonniere unseren Newsletter und bleib immer auf dem Laufenden zu neuesten "
 "Veranstaltungen, Produkten und Neuigkeiten aus dem BuschFunk Verlag."
 
-#: front-page/newsletter.php:25
+#: front-page/newsletter.php:22
+msgid "Sign up"
+msgstr "Abonnieren"
+
+#: front-page/newsletter.php:27
 msgid "30 years of BuschFunk"
 msgstr "30 Jahre BuschFunk"
 
@@ -295,7 +299,7 @@ msgstr "No"
 msgid "Upload Logo (replaces text)"
 msgstr "Upload logo (ersetzt Text)"
 
-#: inc/template-tags.php:18
+#: inc/template-tags.php:18 template-parts/content-list-bufu_artist.php:23
 msgid "No image"
 msgstr "Kein Bild"
 
@@ -329,14 +333,14 @@ msgstr "Seitennavigation"
 msgid "Search Results for: \"%s\""
 msgstr "Suche nach “%s”"
 
-#: template-parts/content-list-bufu_artist.php:17
-#: template-parts/content-list-bufu_artist.php:24
-#: template-parts/content-list-bufu_artist.php:33
+#: template-parts/content-list-bufu_artist.php:19
+#: template-parts/content-list-bufu_artist.php:29
+#: template-parts/content-list-bufu_artist.php:38
 #, php-format
 msgid "Show profile of %s"
 msgstr "Zeige Profil von %s"
 
-#: template-parts/content-list-bufu_artist.php:33
+#: template-parts/content-list-bufu_artist.php:38
 msgid "Go to artist profile"
 msgstr "Zum Künstlerprofil"
 
