@@ -31,6 +31,8 @@ Text Domain:  bufu-theme
 	## Galleries
 # Woocommerce
 # Footer
+# Custom
+# Page-specific
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -1418,4 +1420,69 @@ body:not(.theme-preset-active) footer#colophon {
   .artist-profile .entry-content {
     padding-right: 4rem;
   }
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.page-id-9,   /* prod */
+.page-id-387  /* dev */ {
+
+}
+
+.page-id-9 .entry-title,
+.page-id-387 .entry-title {
+  display: block;
+  background-color: transparent;
+  padding: 0;
+  font-size: 1.171875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.75px;
+  color: #000;
+}
+
+.page-id-9 h2,
+.page-id-387 h2 {
+  font-size: 1.171875rem;
+}
+
+.page-id-9 .wp-block-columns .contact-information,
+.page-id-387 .wp-block-columns .contact-information {
+  position:  relative;
+  margin-top: 3rem;
+  background-color: #000;
+  padding: 3rem;
+  color: #fff;
+}
+
+.page-id-9 .wp-block-columns .contact-information:before,
+.page-id-387 .wp-block-columns .contact-information:before {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3rem;
+  background-color: #ed7101;
+  position: absolute;
+  top: -3rem;
+  right: 0;
+}
+
+.page-id-9 .wp-block-columns .contact-information .wp-block-separator,
+.page-id-387 .wp-block-columns .contact-information .wp-block-separator {
+  border-top-color: rgba(255, 255, 255, 0.35);
+}
+
+.page-id-9 .wp-block-columns .business-hours,
+.page-id-387 .wp-block-columns .business-hours {
+  background-color: #ed7101;
+  padding: 6rem 3rem;
+  margin-left: 0;
+}
+
+.page-id-9 .wp-block-column.generic,
+.page-id-387 .wp-block-column.generic {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 3rem;
 }

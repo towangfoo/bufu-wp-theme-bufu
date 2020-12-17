@@ -9038,6 +9038,10 @@ button.bg-dark:focus {
   text-align: center !important;
 }
 
+.text-lg {
+  font-size: 1.171875rem;
+}
+
 @media (min-width: 576px) {
   .text-sm-left {
     text-align: left !important;
