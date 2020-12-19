@@ -1262,6 +1262,50 @@ body:not(.theme-preset-active) footer#colophon {
   margin-bottom: 0;
 }
 
+.front-store-products .store-product {
+  padding: 1rem; /** half the value of padding article **/
+}
+
+.front-store-products .store-product article {
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+
+.front-store-products .store-product article .row {
+  margin-top: 1rem;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.front-store-products .store-product article .row > div {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.front-store-products .store-product article .meta {
+  font-size: 80%;
+  letter-spacing: -0.33px;
+}
+
+.front-store-products .store-product article .price {
+  text-align: right;
+  font-size: 1.171875rem;
+  color: #ed7101;
+  font-weight: 800;
+}
+
+.front-store-products .store-product article .name {
+  margin: 1rem 0;
+  font-size: 1.171875rem;
+  font-weight: 700;
+  min-height: 44px;
+}
+.front-store-products .store-product article .name a {
+  color: #000;
+}
+.front-store-products .store-product article p:last-of-type {
+  margin-bottom: 0;
+}
+
 .front-newsletter {
   padding-left: 20px; /* compensate for the custom padding in .newsletter-container screwing with the -col layout */
 }

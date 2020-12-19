@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-12-05 22:53+0100\n"
-"PO-Revision-Date: 2020-12-05 22:55+0100\n"
+"POT-Creation-Date: 2020-12-19 18:04+0100\n"
+"PO-Revision-Date: 2020-12-19 18:05+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -133,26 +133,6 @@ msgid_plural "Posts"
 msgstr[0] "Mitteilung"
 msgstr[1] "Mitteilungen"
 
-#: front-page/newsletter.php:17
-msgid "Newsletter"
-msgstr "Newsletter"
-
-#: front-page/newsletter.php:18
-msgid ""
-"Subscribe to our newsletter and stay up to date about upcoming concerts, new "
-"products and more information around the BuschFunk."
-msgstr ""
-"Abonniere unseren Newsletter und bleib immer auf dem Laufenden zu neuesten "
-"Veranstaltungen, Produkten und Neuigkeiten aus dem BuschFunk Verlag."
-
-#: front-page/newsletter.php:22
-msgid "Sign up"
-msgstr "Abonnieren"
-
-#: front-page/newsletter.php:27
-msgid "30 years of BuschFunk"
-msgstr "30 Jahre BuschFunk"
-
 #: front-page/next-concerts.php:25 tribe/events/v2/list.php:44
 msgid "Concert dates"
 msgstr "Konzerttermine"
@@ -173,6 +153,14 @@ msgstr "Lesen"
 msgid "All posts"
 msgstr "Alle Mitteilungen"
 
+#: front-page/shop-links.php:24
+msgid "Tips from our store"
+msgstr "Neues aus dem Konsum"
+
+#: front-page/shop-links.php:46
+msgid "To store"
+msgstr "Zum Konsum"
+
 #: functions.php:45
 msgid "Primary"
 msgstr "Primär"
@@ -181,45 +169,45 @@ msgstr "Primär"
 msgid "Footer"
 msgstr "Folter"
 
-#: functions.php:96
+#: functions.php:98
 msgid "Posts sidebar"
 msgstr "Posts Sidebar"
 
-#: functions.php:98
+#: functions.php:100
 msgid "Sidebar shown with the list of posts"
 msgstr "Sidebar neben der Liste der Mitteilungen"
 
-#: functions.php:105
+#: functions.php:107
 msgid "Artists list sidebar"
 msgstr "Künstler Liste Sidebar"
 
-#: functions.php:107
+#: functions.php:109
 msgid "Sidebar shown with the list of artists"
 msgstr "Sidebar neben der Künstlerliste"
 
-#: functions.php:114
+#: functions.php:116
 msgid "Artist profile sidebar"
 msgstr "Künstlerprofil Sidebar"
 
-#: functions.php:116
+#: functions.php:118
 msgid "Sidebar shown with the artist profile"
 msgstr "Sidebar im Profil eines Künstlers"
 
-#: functions.php:123
+#: functions.php:125
 msgid "Footer Sidebar"
 msgstr "Footer Sidebar"
 
-#: functions.php:125
+#: functions.php:127
 msgid "Sidebar in the page footer. Currently unused."
 msgstr "Sidebar im Seiten-Footer. Z.Z. nicht in Verwendung."
 
-#: functions.php:224
+#: functions.php:232
 msgid "To view this protected post, enter the password below:"
 msgstr ""
 "Um diesen geschützten Post anzuzeigen, geben Sie bitte unten das Passwort "
 "ein:"
 
-#: functions.php:225
+#: functions.php:233
 msgid "Password:"
 msgstr "Passwort:"
 
@@ -332,6 +320,26 @@ msgstr "Seitennavigation"
 #, php-format
 msgid "Search Results for: \"%s\""
 msgstr "Suche nach “%s”"
+
+#: shortcodes/newsletter-signup.php:14
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#: shortcodes/newsletter-signup.php:15
+msgid ""
+"Subscribe to our newsletter and stay up to date about upcoming concerts, new "
+"products and more information around the BuschFunk."
+msgstr ""
+"Abonniere unseren Newsletter und bleib immer auf dem Laufenden zu neuesten "
+"Veranstaltungen, Produkten und Neuigkeiten aus dem BuschFunk Verlag."
+
+#: shortcodes/newsletter-signup.php:19
+msgid "Sign up"
+msgstr "Abonnieren"
+
+#: shortcodes/newsletter-signup.php:25
+msgid "30 years of BuschFunk"
+msgstr "30 Jahre BuschFunk"
 
 #: template-parts/content-list-bufu_artist.php:19
 #: template-parts/content-list-bufu_artist.php:29
