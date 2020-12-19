@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-12-19 18:04+0100\n"
-"PO-Revision-Date: 2020-12-19 18:05+0100\n"
+"POT-Creation-Date: 2020-12-19 20:40+0100\n"
+"PO-Revision-Date: 2020-12-19 20:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -153,11 +153,16 @@ msgstr "Lesen"
 msgid "All posts"
 msgstr "Alle Mitteilungen"
 
-#: front-page/shop-links.php:24
+#: front-page/shop-links.php:22
 msgid "Tips from our store"
 msgstr "Neues aus dem Konsum"
 
-#: front-page/shop-links.php:46
+#: front-page/shop-links.php:36 inc/template-tags.php:18
+#: template-parts/content-list-bufu_artist.php:23
+msgid "No image"
+msgstr "Kein Bild"
+
+#: front-page/shop-links.php:48
 msgid "To store"
 msgstr "Zum Konsum"
 
@@ -169,45 +174,45 @@ msgstr "Primär"
 msgid "Footer"
 msgstr "Folter"
 
-#: functions.php:98
+#: functions.php:100
 msgid "Posts sidebar"
 msgstr "Posts Sidebar"
 
-#: functions.php:100
+#: functions.php:102
 msgid "Sidebar shown with the list of posts"
 msgstr "Sidebar neben der Liste der Mitteilungen"
 
-#: functions.php:107
+#: functions.php:109
 msgid "Artists list sidebar"
 msgstr "Künstler Liste Sidebar"
 
-#: functions.php:109
+#: functions.php:111
 msgid "Sidebar shown with the list of artists"
 msgstr "Sidebar neben der Künstlerliste"
 
-#: functions.php:116
+#: functions.php:118
 msgid "Artist profile sidebar"
 msgstr "Künstlerprofil Sidebar"
 
-#: functions.php:118
+#: functions.php:120
 msgid "Sidebar shown with the artist profile"
 msgstr "Sidebar im Profil eines Künstlers"
 
-#: functions.php:125
+#: functions.php:127
 msgid "Footer Sidebar"
 msgstr "Footer Sidebar"
 
-#: functions.php:127
+#: functions.php:129
 msgid "Sidebar in the page footer. Currently unused."
 msgstr "Sidebar im Seiten-Footer. Z.Z. nicht in Verwendung."
 
-#: functions.php:232
+#: functions.php:240
 msgid "To view this protected post, enter the password below:"
 msgstr ""
 "Um diesen geschützten Post anzuzeigen, geben Sie bitte unten das Passwort "
 "ein:"
 
-#: functions.php:233
+#: functions.php:241
 msgid "Password:"
 msgstr "Passwort:"
 
@@ -287,10 +292,6 @@ msgstr "No"
 msgid "Upload Logo (replaces text)"
 msgstr "Upload logo (ersetzt Text)"
 
-#: inc/template-tags.php:18 template-parts/content-list-bufu_artist.php:23
-msgid "No image"
-msgstr "Kein Bild"
-
 #: inc/template-tags.php:89 inc/template-tags.php:163 inc/template-tags.php:185
 msgid "Edit"
 msgstr "Bearbeiten"
@@ -320,6 +321,14 @@ msgstr "Seitennavigation"
 #, php-format
 msgid "Search Results for: \"%s\""
 msgstr "Suche nach “%s”"
+
+#: shortcodes/mailorder.php:17
+msgid "Mailorder catalogue"
+msgstr "Mailorder-Katalog"
+
+#: shortcodes/mailorder.php:18
+msgid "Download our mailorder catalogue"
+msgstr "Unseren Mailorder-Katalog herunterladen"
 
 #: shortcodes/newsletter-signup.php:14
 msgid "Newsletter"

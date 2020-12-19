@@ -33,7 +33,7 @@ get_header(); ?>
 
             <?php if ( $frontPageContent ) : ?>
             <div class="front-box front-page-text mt-5 mb-6">
-				<?php echo $frontPageContent; ?>
+				<?php echo apply_filters('the_content', $frontPageContent) ?>
 				<?php bufu_theme_edit_post_link(); ?>
             </div>
             <?php endif;?>
