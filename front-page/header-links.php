@@ -22,6 +22,9 @@ $numSlides = count($sliderImages);
 // height of the slider in pixels (should be divisble by 2)
 $sliderHeight = 480;
 
+$artistsUrl = '/kuenstler/';
+$eventsUrl = '/veranstaltungen/liste';
+
 ?>
 <div class="mb-5">
     <div class="row header-visual-links">
@@ -36,7 +39,7 @@ $sliderHeight = 480;
                 <div class="carousel-inner">
                     <?php foreach ($sliderImages as $i => $url) : ?>
                     <div class="carousel-item<?php if ($i === 0) : ?> active<?php endif; ?>">
-                        <a href="/artists/" class="img-centered-absolutely" style="height: <?php echo $sliderHeight ?>px">
+                        <a href="<?php echo $artistsUrl ?>" class="img-centered-absolutely" style="height: <?php echo $sliderHeight ?>px">
                             <img src="<?php echo $url ?>" alt="">
                             <span class="slider-label"><?php echo _n('Artist', 'Artists', 2, 'bufu-theme') ?></span>
                         </a>
@@ -48,13 +51,13 @@ $sliderHeight = 480;
         </div>
         <div class="col-md-4 p-0">
             <div class="visual-link concerts">
-                <a href="/veranstaltungen/liste" class="img-centered-absolutely" style="height: <?php echo $sliderHeight / 2 ?>px" title="<?php echo __('Show upcoming concerts and events', 'bufu-theme') ?>">
+                <a href="<?php echo $eventsUrl ?>" class="img-centered-absolutely" style="height: <?php echo $sliderHeight / 2 ?>px" title="<?php echo __('Show upcoming concerts and events', 'bufu-theme') ?>">
                     <img src="<?php echo $imgConcerts ?>" alt="">
                     <span class="slider-label"><?php echo _n('Concert', 'Concerts', 2, 'bufu-theme') ?></span>
                 </a>
             </div>
             <div class="visual-link konsum">
-                <a href="/veranstaltungen/liste" class="img-centered-absolutely" style="height: <?php echo $sliderHeight / 2 ?>px" target="_blank" title="<?php echo __('Visit the Konsum', 'bufu-theme') ?>">
+                <a href="<?php echo $eventsUrl ?>" class="img-centered-absolutely" style="height: <?php echo $sliderHeight / 2 ?>px" target="_blank" title="<?php echo __('Visit the Konsum', 'bufu-theme') ?>">
                     <img src="<?php echo $imgShop ?>" alt="">
                     <span class="slider-label"><?php echo __('Konsum', 'bufu-theme') ?></span>
                 </a>
