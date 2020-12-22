@@ -188,6 +188,11 @@ function wp_bootstrap_starter_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// just for the album single page
+	if ( is_singular('bufu_album') ) {
+		wp_enqueue_script('wp-bootstrap-starter-album-single', get_template_directory_uri() . '/inc/assets/js/single-album.js', array(), '', true );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_scripts' );
 

@@ -51,7 +51,7 @@ $profileImgHeight = 480;
                 if (count($albums) > 0) :
 
             ?>
-            <div class="discography mt-5 mb-5">
+            <div class="discography mt-5 mb-5" id="diskografie">
                 <h2 class="second-title"><?php echo __("Discography", 'bufu-theme') ?></h2>
                 <?php foreach ($albums as $album) :
 					$albumUrl     = get_permalink($album);
