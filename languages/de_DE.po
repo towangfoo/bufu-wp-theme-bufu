@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-12-19 20:40+0100\n"
-"PO-Revision-Date: 2020-12-19 20:41+0100\n"
+"POT-Creation-Date: 2020-12-22 17:42+0100\n"
+"PO-Revision-Date: 2020-12-22 17:43+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -27,7 +27,8 @@ msgstr ""
 "Diese Seite existiert scheinbar nicht. Vielleicht helfen Ihnen die folgenden "
 "Links weiter?"
 
-#: archive-bufu_artist.php:17 front-page/header-links.php:41
+#: archive-bufu_artist.php:17 front-page/header-links.php:44
+#: template-parts/content-search.php:51
 msgid "Artist"
 msgid_plural "Artists"
 msgstr[0] "Künstler"
@@ -86,7 +87,7 @@ msgstr "Hier geht’s los …"
 msgid "You may use some HTML tags and attributes."
 msgstr "Du kannst einige HTML-Tags verwenden."
 
-#: comments.php:108 template-parts/content-search.php:47
+#: comments.php:108 template-parts/content-search.php:76
 msgid "Show"
 msgstr "Anzeigen"
 
@@ -109,21 +110,21 @@ msgstr "Vorheriger Künstler"
 msgid "Next artist"
 msgstr "Nächster Künstler"
 
-#: front-page/header-links.php:51
+#: front-page/header-links.php:54
 msgid "Show upcoming concerts and events"
 msgstr "Konzerte und Veranstaltungen anzeigen"
 
-#: front-page/header-links.php:53
+#: front-page/header-links.php:56
 msgid "Concert"
 msgid_plural "Concerts"
 msgstr[0] "Konzert"
 msgstr[1] "Konzerte"
 
-#: front-page/header-links.php:57
+#: front-page/header-links.php:60
 msgid "Visit the Konsum"
 msgstr "Den Konsum besuchen"
 
-#: front-page/header-links.php:59
+#: front-page/header-links.php:62
 msgid "Konsum"
 msgstr "Konsum"
 
@@ -206,13 +207,13 @@ msgstr "Footer Sidebar"
 msgid "Sidebar in the page footer. Currently unused."
 msgstr "Sidebar im Seiten-Footer. Z.Z. nicht in Verwendung."
 
-#: functions.php:240
+#: functions.php:245
 msgid "To view this protected post, enter the password below:"
 msgstr ""
 "Um diesen geschützten Post anzuzeigen, geben Sie bitte unten das Passwort "
 "ein:"
 
-#: functions.php:241
+#: functions.php:246
 msgid "Password:"
 msgstr "Passwort:"
 
@@ -400,14 +401,21 @@ msgstr "Seiten:"
 msgid "Edit %s"
 msgstr "%s bearbeiten"
 
-#: template-parts/content-single-bufu_album.php:30
-msgid "No album cover"
-msgstr "Kein Albumcover gefunden"
+#: template-parts/content-search.php:45
+msgid "Album"
+msgid_plural "Albums"
+msgstr[0] "Album"
+msgstr[1] "Alben"
 
+#: template-parts/content-search.php:81
 #: template-parts/content-single-bufu_album.php:35
 #: template-parts/content-single-bufu_artist.php:82
 msgid "Visit in shop"
 msgstr "Im Konsum besuchen"
+
+#: template-parts/content-single-bufu_album.php:30
+msgid "No album cover"
+msgstr "Kein Albumcover gefunden"
 
 #: template-parts/content-single-bufu_artist.php:28
 msgid "Go to artist website"

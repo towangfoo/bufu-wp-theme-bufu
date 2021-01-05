@@ -7,8 +7,15 @@
  * @package BuschFunk
  */
 
-$postTitle = get_the_title();
-$permalink = get_permalink();
+
+$post = get_post();
+
+$postType  = $post->post_type;
+$postTitle = $post->post_title;
+$permalink = get_permalink( $post );
+
+/** @var $artist WP_Post */
+$artist = $post->bufu_artist;
 
 $hasThumbnail = get_the_post_thumbnail( null, 'thumbnail' ) !== '';
 
@@ -27,10 +34,22 @@ $hasThumbnail = get_the_post_thumbnail( null, 'thumbnail' ) !== '';
         <div class="col-md-12">
     <?php endif; ?>
             <header class="entry-header">
-				<?php if ( 'post' === get_post_type() ) : ?>
+				<?php if ( 'post' === $postType ) : ?>
                     <div class="entry-meta">
 						<?php bufu_theme_posted_on(); ?>
                     </div><!-- .entry-meta -->
+				<?php endif; ?>
+
+				<?php if ( 'bufu_album' === $postType ) : ?>
+                    <div class="entry-meta">
+                        <?php echo _n('Album', "Albums", 1, 'bufu-theme') ?>
+                    </div>
+				<?php endif; ?>
+
+				<?php if ( 'bufu_artist' === $postType ) : ?>
+                    <div class="entry-meta">
+						<?php echo _n('Artist', "Artists", 1, 'bufu-theme') ?>
+                    </div>
 				<?php endif; ?>
 
                 <h2 class="entry-title">
@@ -38,13 +57,29 @@ $hasThumbnail = get_the_post_thumbnail( null, 'thumbnail' ) !== '';
 						<?php echo $postTitle ?>
                     </a>
                 </h2>
+                <?php if ( 'bufu_album' === $postType && $artist ) : ?>
+                    <h3><?php echo esc_html($artist->post_title) ?></h3>
+                <?php endif; ?>
             </header>
 
             <div class="entry-content">
-				<?php the_excerpt(); ?>
+                <?php if ( 'bufu_album' === $postType ) :
+					$label        = get_post_meta( $post->ID, '_bufu_artist_albumLabel', true);
+					$releaseDate  = get_post_meta( $post->ID, '_bufu_artist_albumRelease', true);
+                ?>
+                    <p class="album-meta"><?php if (!empty($label)) echo trim($label) . "," ?> <?php echo $releaseDate ?></p>
+                <?php else : ?>
+				    <?php the_excerpt(); ?>
+                <?php endif; ?>
             </div>
             <footer class="entry-footer">
-                <a href="<?php echo esc_url( $permalink ) ?>" title="<?php echo esc_attr( $postTitle ) ?>" class="btn btn-icon-left"><span class="icon">&raquo;</span> <?php echo __('Show', 'bufu-theme') ?></span></a>
+                <a href="<?php echo esc_url( $permalink ) ?>" title="<?php echo esc_attr( $postTitle ) ?>" class="btn btn-default btn-pill"><?php echo __('Show', 'bufu-theme') ?></span></a>
+				<?php if ( 'bufu_album' === $postType ) :
+				    $shopUrl = get_post_meta( $post->ID, '_bufu_artist_shopUrl', true);
+				    if ($shopUrl) {
+				?>
+                    <a href="<?php echo esc_url( $shopUrl ) ?>" target="_blank" class="btn btn-default btn-pill" data-external><?php echo __("Visit in shop", 'bufu-theme') ?></a>
+				<?php } endif; ?>
             </footer><!-- .entry-footer -->
         </div>
     </div>
