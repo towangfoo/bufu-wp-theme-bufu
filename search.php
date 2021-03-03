@@ -7,6 +7,9 @@
  * @package BuschFunk
  */
 
+// check if the scope is artists or standard
+$artistScope = (get_query_var('post_type') === 'bufu_artist');
+
 get_header(); ?>
 
 	<section id="primary" class="content-area col-sm-12 col-lg-8">
@@ -16,7 +19,13 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title page-title-sm"><?php printf( esc_html__( 'Search Results for: "%s"', 'bufu-theme' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="page-title page-title-sm">
+                    <?php if ($artistScope) :?>
+						<?php printf( esc_html__( 'Search Results for: "%s" in Artists', 'bufu-theme' ), '<span>' . get_search_query() . '</span>' ); ?>
+                    <?php else : ?>
+                        <?php printf( esc_html__( 'Search Results for: "%s"', 'bufu-theme' ), '<span>' . get_search_query() . '</span>' ); ?>
+                    <?php endif; ?>
+                </h1>
 			</header><!-- .page-header -->
 
             <div class="list-posts search-results">
@@ -49,5 +58,5 @@ get_header(); ?>
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
+get_sidebar( $artistScope ? 'artists' : null );
 get_footer();

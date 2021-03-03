@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-03-03 17:41+0100\n"
-"PO-Revision-Date: 2021-03-03 17:41+0100\n"
+"POT-Creation-Date: 2021-03-03 21:48+0100\n"
+"PO-Revision-Date: 2021-03-03 21:48+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Links weiter?"
 
 #: archive-bufu_artist.php:17 front-page/header-links.php:44
-#: template-parts/content-search.php:51
+#: template-parts/content-search.php:47
 msgid "Artist"
 msgid_plural "Artists"
 msgstr[0] "Künstler"
@@ -87,7 +87,7 @@ msgstr "Hier geht’s los …"
 msgid "You may use some HTML tags and attributes."
 msgstr "Du kannst einige HTML-Tags verwenden."
 
-#: comments.php:108 template-parts/content-search.php:76
+#: comments.php:108 template-parts/content-search.php:72
 msgid "Show"
 msgstr "Anzeigen"
 
@@ -128,7 +128,7 @@ msgstr "Den Konsum besuchen"
 msgid "Konsum"
 msgstr "Konsum"
 
-#: front-page/last-posts.php:21
+#: front-page/last-posts.php:21 template-parts/content-search.php:39
 msgid "BuschFunk posts"
 msgstr "BuschFunk meldet"
 
@@ -316,7 +316,12 @@ msgstr "Ein Menu hinzufügen"
 msgid "Pagination menu"
 msgstr "Seitennavigation"
 
-#: search.php:19
+#: search.php:24
+#, php-format
+msgid "Search Results for: \"%s\" in Artists"
+msgstr "Suche nach “%s” in Künstlern"
+
+#: search.php:26
 #, php-format
 msgid "Search Results for: \"%s\""
 msgstr "Suche nach “%s”"
@@ -395,13 +400,13 @@ msgstr "Seiten:"
 msgid "Edit %s"
 msgstr "%s bearbeiten"
 
-#: template-parts/content-search.php:45
+#: template-parts/content-search.php:43
 msgid "Album"
 msgid_plural "Albums"
 msgstr[0] "Album"
 msgstr[1] "Alben"
 
-#: template-parts/content-search.php:81
+#: template-parts/content-search.php:77
 #: template-parts/content-single-bufu_album.php:35
 #: template-parts/content-single-bufu_artist.php:82
 msgid "Visit in shop"
@@ -490,25 +495,25 @@ msgstr "Suchbegriff angeben. Suche nach %s."
 msgid "Loading..."
 msgstr "Lade …"
 
-#: tribe/events/v2/list/event-flat.php:41
-#: tribe/events/v2/list/event/featured-tag.php:20
-msgid "Recommended"
-msgstr "Empfehlung"
-
-#: tribe/events/v2/list/event-flat.php:70
-#: tribe/events/v2/list/event/links.php:27
-msgid "More about the artist"
-msgstr "Mehr zum Künstler"
-
-#: tribe/events/v2/list/event-flat.php:90
+#: tribe/events/v2/list/event-flat.php:51
 #: tribe/events/v2/list/event/date.php:36
 msgid "Starts at"
 msgstr "Beginn"
 
-#: tribe/events/v2/list/event-flat.php:97
+#: tribe/events/v2/list/event-flat.php:58
 #: tribe/events/v2/list/event/ticket-link.php:23
 msgid "Order tickets"
 msgstr "Tickets bestellen"
+
+#: tribe/events/v2/list/event-flat.php:66
+#: tribe/events/v2/list/event/featured-tag.php:20
+msgid "Recommended"
+msgstr "Empfehlung"
+
+#: tribe/events/v2/list/event-flat.php:95
+#: tribe/events/v2/list/event/links.php:27
+msgid "More about the artist"
+msgstr "Mehr zum Künstler"
 
 #: tribe/events/v2/list/top-bar/datepicker.php:76
 msgid "Select date."
