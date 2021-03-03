@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-12-22 17:42+0100\n"
-"PO-Revision-Date: 2020-12-22 17:43+0100\n"
+"POT-Creation-Date: 2021-03-03 17:41+0100\n"
+"PO-Revision-Date: 2021-03-03 17:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -129,10 +129,8 @@ msgid "Konsum"
 msgstr "Konsum"
 
 #: front-page/last-posts.php:21
-msgid "Post"
-msgid_plural "Posts"
-msgstr[0] "Mitteilung"
-msgstr[1] "Mitteilungen"
+msgid "BuschFunk posts"
+msgstr "BuschFunk meldet"
 
 #: front-page/next-concerts.php:25 tribe/events/v2/list.php:44
 msgid "Concert dates"
@@ -158,12 +156,12 @@ msgstr "Alle Mitteilungen"
 msgid "Tips from our store"
 msgstr "Neues aus dem Konsum"
 
-#: front-page/shop-links.php:36 inc/template-tags.php:18
+#: front-page/shop-links.php:38 inc/template-tags.php:18
 #: template-parts/content-list-bufu_artist.php:23
 msgid "No image"
 msgstr "Kein Bild"
 
-#: front-page/shop-links.php:48
+#: front-page/shop-links.php:50
 msgid "To store"
 msgstr "Zum Konsum"
 
@@ -331,11 +329,11 @@ msgstr "Mailorder-Katalog"
 msgid "Download our mailorder catalogue"
 msgstr "Unseren Mailorder-Katalog herunterladen"
 
-#: shortcodes/newsletter-signup.php:14
+#: shortcodes/newsletter-signup.php:15
 msgid "Newsletter"
 msgstr "Newsletter"
 
-#: shortcodes/newsletter-signup.php:15
+#: shortcodes/newsletter-signup.php:16
 msgid ""
 "Subscribe to our newsletter and stay up to date about upcoming concerts, new "
 "products and more information around the BuschFunk."
@@ -343,13 +341,9 @@ msgstr ""
 "Abonniere unseren Newsletter und bleib immer auf dem Laufenden zu neuesten "
 "Veranstaltungen, Produkten und Neuigkeiten aus dem BuschFunk Verlag."
 
-#: shortcodes/newsletter-signup.php:19
+#: shortcodes/newsletter-signup.php:20
 msgid "Sign up"
 msgstr "Abonnieren"
-
-#: shortcodes/newsletter-signup.php:25
-msgid "30 years of BuschFunk"
-msgstr "30 Jahre BuschFunk"
 
 #: template-parts/content-list-bufu_artist.php:19
 #: template-parts/content-list-bufu_artist.php:29
@@ -519,6 +513,14 @@ msgstr "Tickets bestellen"
 #: tribe/events/v2/list/top-bar/datepicker.php:76
 msgid "Select date."
 msgstr "Datum wählen."
+
+#~ msgid "Post"
+#~ msgid_plural "Posts"
+#~ msgstr[0] "Mitteilung"
+#~ msgstr[1] "Mitteilungen"
+
+#~ msgid "30 years of BuschFunk"
+#~ msgstr "30 Jahre BuschFunk"
 
 #~ msgid ""
 #~ "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> "

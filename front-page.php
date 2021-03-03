@@ -42,11 +42,11 @@ get_header(); ?>
 
 			<?php get_template_part( 'front-page/next-concerts' ); ?>
 
-			<?php get_template_part( 'front-page/newsletter' ); ?>
+			<?php get_template_part( 'front-page/last-posts' ); ?>
 
 			<?php get_template_part( 'front-page/featured-artists' ); ?>
 
-            <?php get_template_part( 'front-page/last-posts' ); ?>
+			<?php get_template_part( 'front-page/newsletter' ); ?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->

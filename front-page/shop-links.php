@@ -26,6 +26,8 @@ $localImageBase = '/wp-content/mu-plugins/bufu-artists/';
             if ($i > 0 && $i % 3 === 0) {
                 echo "</div><div class=\"row\">";
             }
+
+            $fullName = $product['data']['artist'] . ": " . $product['data']['name'];
         ?>
         <div class="col-12 col-lg-4 store-product">
             <article>
@@ -38,13 +40,13 @@ $localImageBase = '/wp-content/mu-plugins/bufu-artists/';
                 </a>
                 <div class="row">
                     <div class="col-8 meta">
-                        <?php echo esc_html($product['data']['artist']) ?> / <?php echo esc_html($product['data']['type']) ?>
+                        <?php echo esc_html($product['data']['type']) ?>
                     </div>
                     <div class="col-4 price">
                         <?php echo ($product['data']['special_price']) ? esc_html($product['data']['special_price']) : esc_html($product['data']['regular_price']) ?>
                     </div>
                 </div>
-                <h3 class="name"><a href="<?php echo esc_attr($product['url']) ?>"><?php echo esc_html($product['data']['name']) ?></a></h3>
+                <h3 class="name"><a href="<?php echo esc_attr($product['url']) ?>" title="<?php echo esc_attr($fullName) ?>"><?php echo esc_html($fullName) ?></a></h3>
                 <p><a href="<?php echo esc_attr($product['url']) ?>" class="btn btn-icon-left"><span class="icon">»</span> <?php _e("To store", 'bufu-theme') ?></a></p>
             </article>
         </div>

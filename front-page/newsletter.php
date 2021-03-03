@@ -1,6 +1,6 @@
 <?php
 /**
- * Show newsletter signup.
+ * Show newsletter signup, with mailorder catalogue via shortcode.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
