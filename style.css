@@ -668,7 +668,7 @@ a img.aligncenter {
 --------------------------------------------------------------*/
 
 .sidebar {
-  background-color: #000;
+  background-color: #666;
   margin: 6rem 0;
 }
 
@@ -742,7 +742,7 @@ a img.aligncenter {
 }
 
 .sidebar .widget-artists-wall {
-  margin: 1.5rem 0;
+  margin: 0 -1.5rem 1.5rem;
 }
 
 .sidebar .widget-artists-wall .row,

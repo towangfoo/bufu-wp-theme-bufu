@@ -36,17 +36,13 @@ $hasThumbnail = get_the_post_thumbnail( null, 'thumbnail' ) !== '';
             <header class="entry-header">
 				<?php if ( 'post' === $postType ) : ?>
                     <div class="entry-meta">
-						<?php bufu_theme_posted_on(); ?>
-                    </div><!-- .entry-meta -->
-				<?php endif; ?>
-
-				<?php if ( 'bufu_album' === $postType ) : ?>
+						<?php echo __('BuschFunk posts', 'bufu-theme') ?>, <?php bufu_theme_posted_on(); ?>
+                    </div>
+				<?php elseif ( 'bufu_album' === $postType ) : ?>
                     <div class="entry-meta">
                         <?php echo _n('Album', "Albums", 1, 'bufu-theme') ?>
                     </div>
-				<?php endif; ?>
-
-				<?php if ( 'bufu_artist' === $postType ) : ?>
+				<?php elseif ( 'bufu_artist' === $postType ) : ?>
                     <div class="entry-meta">
 						<?php echo _n('Artist', "Artists", 1, 'bufu-theme') ?>
                     </div>
