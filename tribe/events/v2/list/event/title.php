@@ -19,6 +19,11 @@
 /** @var $artist WP_Post */
 $artist = $event->bufu_artist;
 
+if (!($artist instanceof WP_Post)) {
+	$artist = bufu_artists()->loadArtistFromCustomMeta($event);
+	$event->bufu_artist = $artist;
+}
+
 ?>
 
 <?php if ($artist) : ?>

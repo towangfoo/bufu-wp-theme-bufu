@@ -17,6 +17,11 @@ $venue = $event->venues[0];
 /** @var $artist WP_Post */
 $artist = $event->bufu_artist;
 
+if (!($artist instanceof WP_Post)) {
+	$artist = bufu_artists()->loadArtistFromCustomMeta($event);
+	$event->bufu_artist = $artist;
+}
+
 $container_classes = [ 'row', 'tribe-events-calendar-list__event-row' ];
 if ($event->featured) {
 	$container_classes[] = 'tribe-events-calendar-list__event-row--featured';
@@ -34,7 +39,27 @@ $adminEditUrl = get_edit_post_link( $event );
 ?>
 
 <div <?php tribe_classes( $container_classes ); ?>>
-	<div class="col-sm-6 col-md-8 col-lg-9 tribe-events-calendar-list__event-info">
+    <div class="col-md-4 col-lg-3 tribe-events-calendar-list__event-date">
+        <time datetime="<?php echo esc_attr( $event_date_attr ) ?>" aria-hidden="true"></time>
+        <div class="row">
+            <div class="col-sm-7 date-column-1 text-center">
+                <span class="event-date date-day"><?php echo $startDate->format("d") ?></span>
+                <span class="event-date date-month"><?php echo mb_substr(__($startDate->format("F")), 0, 3) ?></span>
+                <span class="event-date date-year"><?php echo $startDate->format("Y") ?></span>
+            </div>
+            <div class="col-sm-5 date-column-2 text-center">
+                <span class="event-date date-label"><?php echo __("Starts at", 'bufu-theme') ?></span>
+                <span class="event-date date-time"><?php echo $startDate->format("H:i") ?></span>
+            </div>
+        </div>
+
+		<?php if ($ticketUrl) : ?>
+            <div class="tribe-events-c-small-cta tribe-events-calendar-list__event-tickets text-right">
+                <a href="<?php echo $ticketUrl ?>" target="_blank"><?php echo __("Order tickets", 'bufu-theme') ?></a>
+            </div>
+		<?php endif; ?>
+    </div>
+	<div class="col-md-8 col-lg-9 tribe-events-calendar-list__event-info">
 		<article <?php tribe_classes( $event_classes ); ?>>
 
 			<?php if ($event->featured) : ?>
@@ -67,7 +92,7 @@ $adminEditUrl = get_edit_post_link( $event );
 				<?php if ($artist || $adminEditUrl) : ?>
 					<div class="tribe-events-c-small-cta tribe-events-calendar-list__event-links">
                         <?php if ( $artist ) : ?>
-						<a href="<?php echo get_the_permalink( $artist ) ?>" class="btn btn-default btn-pill"><?php echo __("More about the artist", 'bufu-theme') ?></a>
+						    <a href="<?php echo get_the_permalink( $artist ) ?>" class="btn btn-default btn-pill"><?php echo __("More about the artist", 'bufu-theme') ?></a>
                         <?php endif; ?>
 
 						<?php bufu_theme_edit_post_link( $post ); ?>
@@ -77,26 +102,4 @@ $adminEditUrl = get_edit_post_link( $event );
 			</div>
 		</article>
 	</div>
-
-	<div class="col-sm-6 col-md-4 col-lg-3 tribe-events-calendar-list__event-date">
-		<time datetime="<?php echo esc_attr( $event_date_attr ) ?>" aria-hidden="true"></time>
-		<div class="row">
-			<div class="col-sm-7 date-column-1 text-center">
-				<span class="event-date date-day"><?php echo $startDate->format("d") ?></span>
-				<span class="event-date date-month"><?php echo substr(__($startDate->format("F")), 0, 3) ?></span>
-				<span class="event-date date-year"><?php echo $startDate->format("Y") ?></span>
-			</div>
-			<div class="col-sm-5 date-column-2 text-center">
-				<span class="event-date date-label"><?php echo __("Starts at", 'bufu-theme') ?></span>
-				<span class="event-date date-time"><?php echo $startDate->format("H:i") ?></span>
-			</div>
-		</div>
-
-		<?php if ($ticketUrl) : ?>
-			<div class="tribe-events-c-small-cta tribe-events-calendar-list__event-tickets text-right">
-				<a href="<?php echo $ticketUrl ?>" target="_blank"><?php echo __("Order tickets", 'bufu-theme') ?></a>
-			</div>
-		<?php endif; ?>
-	</div>
-
 </div>

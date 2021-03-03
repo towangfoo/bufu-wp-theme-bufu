@@ -29,7 +29,7 @@ $startDate = $event->dates->start;
 <div class="row">
     <div class="col-sm-7 date-column-1 text-center">
         <span class="event-date date-day"><?php echo $startDate->format("d") ?></span>
-        <span class="event-date date-month"><?php echo substr(__($startDate->format("F")), 0, 3) ?></span>
+        <span class="event-date date-month"><?php echo mb_substr(__($startDate->format("F")), 0, 3) ?></span>
         <span class="event-date date-year"><?php echo $startDate->format("Y") ?></span>
     </div>
     <div class="col-sm-5 date-column-2 text-center">

@@ -38,16 +38,19 @@
 .tribe-events .tribe-events-calendar-list__event-header .tribe-events-calendar-list__event-artist {
     padding-bottom: 0;
     margin-bottom: .3rem;
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: 1.40625rem;
+    font-weight: 700;
     letter-spacing: -1.3px;
 }
 .tribe-events .tribe-events-calendar-list__event-header .tribe-events-calendar-list__event-title {
     padding-bottom: 0;
     margin-bottom: 0;
-    font-size: 1.85rem;
-    font-weight: 700;
+    font-size: 1.640625rem;
+    font-weight: 400;
     letter-spacing: -1.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .tribe-events .tribe-events-calendar-list__event-header .tribe-events-calendar-list__event-title a {
     color: #000;
@@ -69,7 +72,6 @@
 .tribe-events .tribe-events-calendar-list__event-date .event-date {
     color: #fff;
     display: block;
-    text-transform: lowercase;
 }
 .tribe-events .tribe-events-calendar-list__event-date .date-label,
 .tribe-events .tribe-events-calendar-list__event-date .date-year {
@@ -92,13 +94,40 @@
 }
 .tribe-events .tribe-events-calendar-list__event-tickets a {
     display: block;
-    padding: 12px 12px;
+    padding: 12px;
     color: #fff;
     font-weight: 500;
     font-size: 0.85rem;
     text-transform: uppercase;
 }
 
+/** Optimize for small screens */
+@media (max-width: 767px) {
+    /** less padding for the date **/
+    .tribe-events .tribe-events-calendar-list__event-date .date-column-1,
+    .tribe-events .tribe-events-calendar-list__event-date .date-column-2 {
+        padding: 12px 6px 6px;
+    }
+    .tribe-events .tribe-events-calendar-list__event-date .date-month {
+        margin: 0.2rem 0;
+    }
+
+    /** Align ticket link to the left  */
+    .tribe-events .tribe-events-calendar-list__event-tickets.text-right {
+        text-align: left !important;
+    }
+
+    /** less padding for the content **/
+    .tribe-events article.tribe-events-calendar-list__event {
+        padding: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .tribe-events .tribe-events-calendar-list__event-date {
+        min-height: 191px;
+    }
+}
 
 /******** single event ********/
 
