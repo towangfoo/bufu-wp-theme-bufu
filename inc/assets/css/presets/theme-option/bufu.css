@@ -5018,6 +5018,10 @@ tbody.collapse.show {
   border-color: #ed7101;
 }
 
+.pagination .page-numbers.current:hover {
+  color: #000;
+}
+
 .page-item.disabled .page-link {
   color: #eee;
   pointer-events: none;

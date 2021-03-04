@@ -1511,6 +1511,36 @@ body:not(.theme-preset-active) footer#colophon {
   }
 }
 
+.artist-filter-startswith {
+  margin-bottom: 3rem;
+}
+.artist-filter-startswith a {
+  display: inline-block;
+  border: 1px solid #979797;
+  padding: 4px;
+  color: #666;
+  line-height: 1.0rem;
+  margin-left: 3px;
+}
+.artist-filter-startswith a:hover,
+.artist-filter-startswith a:focus,
+.artist-filter-startswith a:active {
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+}
+.artist-filter-startswith a:first-child {
+  margin-left: 0;
+}
+.artist-filter-startswith a.current,
+.artist-filter-startswith a.current:hover,
+.artist-filter-startswith a.current:focus,
+.artist-filter-startswith a.current:active {
+  background-color: #ed7101;
+  border-color: #ed7101;
+  color: #333;
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/

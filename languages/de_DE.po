@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-03-03 21:48+0100\n"
-"PO-Revision-Date: 2021-03-03 21:48+0100\n"
+"POT-Creation-Date: 2021-03-04 19:47+0100\n"
+"PO-Revision-Date: 2021-03-04 19:47+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -27,7 +27,12 @@ msgstr ""
 "Diese Seite existiert scheinbar nicht. Vielleicht helfen Ihnen die folgenden "
 "Links weiter?"
 
-#: archive-bufu_artist.php:17 front-page/header-links.php:44
+#: archive-bufu_artist.php:21 template-parts/bufu_artist-starts-with.php:16
+#, php-format
+msgid "Artists starting with \"%s\""
+msgstr "Künstler mit “%s”"
+
+#: archive-bufu_artist.php:23 front-page/header-links.php:44
 #: template-parts/content-search.php:47
 msgid "Artist"
 msgid_plural "Artists"
@@ -349,6 +354,10 @@ msgstr ""
 #: shortcodes/newsletter-signup.php:20
 msgid "Sign up"
 msgstr "Abonnieren"
+
+#: template-parts/bufu_artist-starts-with.php:14
+msgid "All"
+msgstr "Alle"
 
 #: template-parts/content-list-bufu_artist.php:19
 #: template-parts/content-list-bufu_artist.php:29

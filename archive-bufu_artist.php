@@ -5,6 +5,8 @@
  * @package BuschFunk
  */
 
+$letterFilter = bufu_artists()->getCurrentArtistLetterFilter();
+
 get_header(); ?>
 
 	<section id="primary" class="content-area col-sm-12 col-lg-8">
@@ -14,8 +16,18 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-                <h1 class="page-title"><?php echo _n('Artist', 'Artists', 2, 'bufu-theme') ?></h1>
+                <h1 class="page-title">
+                <?php if ($letterFilter) : ?>
+                    <?php printf(__('Artists starting with "%s"', 'bufu-theme'), ucfirst($letterFilter)) ?>
+                <?php else : ?>
+                    <?php echo _n('Artist', 'Artists', 2, 'bufu-theme') ?>
+                <?php endif; ?>
+                </h1>
 			</header><!-- .page-header -->
+
+            <?php get_template_part( 'template-parts/bufu_artist-starts-with', null, [
+                'current' => $letterFilter
+            ] ) ?>
 
             <div class="list-posts">
 			<?php
