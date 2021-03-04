@@ -18,7 +18,7 @@ $profileImgHeight = 480;
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'artist-profile' ); ?>>
 	<header class="entry-header">
-        <div class="img-centered-absolutely" style="height: <?php echo $profileImgHeight ?>px">
+        <div class="img-centered-absolutely">
             <img class="d-block w-100" src="<?php echo $profileImg ?>" alt="<?php the_title() ?>">
         </div>
         <div class="overlay">

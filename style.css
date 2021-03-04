@@ -1213,6 +1213,11 @@ body:not(.theme-preset-active) footer#colophon {
 .foogallery.foogallery-container.fg-default.fg-gutter-10 {
   margin-left: -10px;
 }
+.foogallery.foogallery-container + .fg-paging-container {
+  margin-top: -2rem;
+  padding: 10px 15px;
+  margin-bottom: 2rem;
+}
 
 .no-thumbnail-available {
   padding: 0;
@@ -1468,10 +1473,10 @@ body:not(.theme-preset-active) footer#colophon {
 .artist-profile .entry-header .overlay {
   position: absolute;
   bottom: 30px;
-  left: 100px;
+  left: 30px;
 }
 .artist-profile .entry-header .overlay .entry-title {
-  font-size: 2.80rem;
+  font-size: 1.80rem;
   letter-spacing: -2.2px;
   max-width: 650px;
   margin-bottom: 0;
@@ -1481,6 +1486,50 @@ body:not(.theme-preset-active) footer#colophon {
   color: #fff;
   padding: 0.375rem 0.8rem;
   font-size: 0.85rem;
+}
+
+/** let the stage image always be distinctly wide **/
+.artist-profile .entry-header .img-centered-absolutely {
+  height: 200px;
+}
+@media (min-width: 576px) {
+  .artist-profile .entry-header .img-centered-absolutely {
+    height: 240px;
+  }
+}
+@media (min-width: 768px) {
+  .artist-profile .entry-header .img-centered-absolutely {
+    height: 300px;
+  }
+  .artist-profile .entry-header .overlay {
+    left: 60px;
+  }
+  .artist-profile .entry-header .overlay .entry-title {
+    font-size: 2.10rem;
+  }
+}
+@media (min-width: 992px) {
+  .artist-profile .entry-header .img-centered-absolutely {
+    height: 380px;
+  }
+  .artist-profile .entry-header .overlay {
+    left: 100px;
+  }
+  .artist-profile .entry-header .overlay .entry-title {
+    font-size: 2.40rem;
+  }
+}
+@media (min-width: 1200px) {
+  .artist-profile .entry-header .img-centered-absolutely {
+    height: 480px;
+  }
+  .artist-profile .entry-header .overlay .entry-title {
+    font-size: 2.80rem;
+  }
+}
+
+.artist-profile .entry-content .wp-block-embed {
+    margin: 1.5rem 0;
 }
 
 .artist-profile .discography .second-title {
