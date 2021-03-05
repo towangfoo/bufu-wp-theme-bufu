@@ -693,7 +693,7 @@ a img.aligncenter {
 .sidebar .nav .nav-item:not(:first-child) {
   border-top: 1px solid #999;
 }
-.sidebar .nav .nav-item .nav-link {
+.sidebar .nav .nav-item a {
   display: inline;
   padding: 0;
   color: #fff;
