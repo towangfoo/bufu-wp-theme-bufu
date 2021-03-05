@@ -1289,6 +1289,30 @@ body:not(.theme-preset-active) footer#colophon {
   margin-top: 1.5rem;
 }
 
+#history-back {
+  position: fixed;
+  z-index: 10;
+  left: 30px;
+  border: 1px solid #ed7101;
+  border-radius: 50%;
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 0;
+  color: #999;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: block;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+}
+#history-back:hover,
+#history-back:focus,
+#history-back:active {
+  color: #333;
+  background-color: #eee;
+}
+
 /*--------------------------------------------------------------
 # Front page
 --------------------------------------------------------------*/

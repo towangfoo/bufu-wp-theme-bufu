@@ -75,4 +75,33 @@ jQuery( function ( $ ) {
         }, 1000, 'swing');
     });
 
+    // add global back button to any page, except these mentioned
+    setTimeout(function() {
+        var hasHistory = false;
+        var notHere = ['/', '/events/', '/kuenstler/', '/meldungen/', '/posts/', '/kalenderblaetter/', '/kontakt/', '/impressum/', '/datenschutz/'];
+        if (notHere.indexOf(window.location.pathname) === -1) {
+            $('#content').prepend($('<button>').hide().attr({
+                'type': 'button',
+                'id': 'history-back',
+                'title': 'Eine Seite zurück'
+            }).text('«'));
+            $('#history-back').fadeIn(400).on('click', function() {
+
+                window.history.go(-1);
+
+                setTimeout(function(){
+                    if (!hasHistory) {
+                        window.location.href = '/';
+                    }
+                }, 1000);
+
+                return false;
+            });
+
+            $(window).on('beforeunload', function(){
+                hasHistory = true;
+            });
+        }
+    }, 2000);
+
 });
