@@ -90,9 +90,9 @@ $profileImgHeight = 480;
             <?php endif; ?>
         </div>
         <aside class="col-lg-4" role="complementary">
-            <?php if ( is_active_sidebar( 'sidebar-3' ) )  : ?>
+            <?php if ( is_active_sidebar( 'sidebar-profile' ) )  : ?>
             <div class="widget-area sidebar" id="secondary">
-				<?php dynamic_sidebar( 'sidebar-3' ); ?>
+				<?php dynamic_sidebar( 'sidebar-profile' ); ?>
             </div>
             <?php endif; ?>
         </aside>

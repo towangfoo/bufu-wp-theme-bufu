@@ -107,7 +107,7 @@ function wp_bootstrap_starter_widgets_init() {
     ) );
 	register_sidebar( array(
 		'name'          => esc_html__( 'Artists list sidebar', 'bufu-theme' ),
-		'id'            => 'sidebar-2',
+		'id'            => 'sidebar-artists',
 		'description'   => esc_html__( 'Sidebar shown with the list of artists', 'bufu-theme' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
@@ -116,8 +116,17 @@ function wp_bootstrap_starter_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => esc_html__( 'Artist profile sidebar', 'bufu-theme' ),
-		'id'            => 'sidebar-3',
+		'id'            => 'sidebar-profile',
 		'description'   => esc_html__( 'Sidebar shown with the artist profile', 'bufu-theme' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Chronicles sidebar', 'bufu-theme' ),
+		'id'            => 'sidebar-chronicles',
+		'description'   => esc_html__( 'Sidebar shown on the chronicles page and all subpages', 'bufu-theme' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title">',

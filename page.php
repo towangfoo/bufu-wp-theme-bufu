@@ -12,6 +12,16 @@
  * @package BuschFunk
  */
 
+global $post;
+
+// @FIXME hardcoded page slug
+$postNameChronicles = 'kalenderblaetter';
+
+$sidebarSlug = '';
+if ( $post->post_name === $postNameChronicles ) {
+    $sidebarSlug = 'sidebar-chronicles';
+}
+
 get_header(); ?>
 
 	<section id="primary" class="content-area col-sm-12 col-lg-8">
@@ -34,5 +44,5 @@ get_header(); ?>
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
+get_sidebar(null, [ 'slug' => $sidebarSlug ] );
 get_footer();

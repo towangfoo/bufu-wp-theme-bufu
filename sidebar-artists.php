@@ -7,13 +7,13 @@
  * @package BuschFunk
  */
 
-if ( ! is_active_sidebar( 'sidebar-2' ) ) {
+if ( ! is_active_sidebar( 'sidebar-artists' ) ) {
 	return;
 }
 ?>
 
 <aside class="col-sm-12 col-lg-4" role="complementary">
     <div class="widget-area sidebar" id="secondary">
-		<?php dynamic_sidebar( 'sidebar-2' ); ?>
-    </div><!-- #secondary -->
+		<?php dynamic_sidebar( 'sidebar-artists' ); ?>
+    </div>
 </aside>
