@@ -670,7 +670,7 @@ a img.aligncenter {
 .sidebar {
   background-color: #666;
   margin: 6rem 0;
-  padding-bottom: 1px; /** to trigger the margin from setcion before **/
+  padding-bottom: 1px; /** to trigger the margin from section before **/
 }
 
 .sidebar section {
