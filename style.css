@@ -670,6 +670,7 @@ a img.aligncenter {
 .sidebar {
   background-color: #666;
   margin: 6rem 0;
+  padding-bottom: 1px; /** to trigger the margin from setcion before **/
 }
 
 .sidebar section {
@@ -1269,14 +1270,16 @@ body:not(.theme-preset-active) footer#colophon {
 # Shortcodes
 --------------------------------------------------------------*/
 
-.sc-mailorder {
+.sc-mailorder,
+.sc-newsletter-sidebar {
   display: inline-block;
   position: relative;
   border: 5px solid #ed7101;
   overflow: hidden;
 }
 
-.sc-mailorder .ribbon {
+.sc-mailorder .ribbon,
+.sc-newsletter-sidebar .ribbon {
   position: absolute;
   bottom: 15%;
   display: block;
@@ -1289,13 +1292,24 @@ body:not(.theme-preset-active) footer#colophon {
   filter: alpha(opacity=80);
   opacity: 0.8;
 }
-.sc-mailorder a:hover .ribbon {
+.sc-mailorder a:hover .ribbon,
+.sc-mailorder a:focus .ribbon,
+.sc-mailorder a:active .ribbon,
+.sc-newsletter-sidebar  a:hover .ribbon,
+.sc-newsletter-sidebar  a:focus .ribbon,
+.sc-newsletter-sidebar  a:active .ribbon {
   filter: alpha(opacity=100);
   opacity: 1;
 }
 
-.sidebar .textwidget .sc-mailorder {
+.sidebar .textwidget .sc-mailorder,
+.sidebar .textwidget .sc-newsletter-sidebar {
   margin-top: 1.5rem;
+}
+
+.sc-newsletter-signup-form .interest-segments label:not(:first-child) {
+  margin-left: 5px;
+
 }
 
 #history-back {

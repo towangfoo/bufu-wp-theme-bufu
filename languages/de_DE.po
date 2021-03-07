@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-03-05 21:04+0100\n"
-"PO-Revision-Date: 2021-03-05 21:04+0100\n"
+"POT-Creation-Date: 2021-03-07 13:19+0100\n"
+"PO-Revision-Date: 2021-03-07 13:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -137,6 +137,18 @@ msgstr "Konsum"
 msgid "BuschFunk posts"
 msgstr "BuschFunk meldet"
 
+#: front-page/newsletter.php:17
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#: front-page/newsletter.php:18
+msgid ""
+"Subscribe to our newsletter and stay up to date about upcoming concerts, new "
+"products and more information around the BuschFunk."
+msgstr ""
+"Abonniere unseren Newsletter und bleib immer auf dem Laufenden zu neuesten "
+"Veranstaltungen, Produkten und Neuigkeiten aus dem BuschFunk Verlag."
+
 #: front-page/next-concerts.php:25 tribe/events/v2/list.php:44
 msgid "Concert dates"
 msgstr "Konzerttermine"
@@ -178,45 +190,53 @@ msgstr "Primär"
 msgid "Footer"
 msgstr "Folter"
 
-#: functions.php:100
+#: functions.php:101
 msgid "Posts sidebar"
 msgstr "Posts Sidebar"
 
-#: functions.php:102
+#: functions.php:103
 msgid "Sidebar shown with the list of posts"
 msgstr "Sidebar neben der Liste der Mitteilungen"
 
-#: functions.php:109
+#: functions.php:110
 msgid "Artists list sidebar"
 msgstr "Künstler Liste Sidebar"
 
-#: functions.php:111
+#: functions.php:112
 msgid "Sidebar shown with the list of artists"
 msgstr "Sidebar neben der Künstlerliste"
 
-#: functions.php:118
+#: functions.php:119
 msgid "Artist profile sidebar"
 msgstr "Künstlerprofil Sidebar"
 
-#: functions.php:120
+#: functions.php:121
 msgid "Sidebar shown with the artist profile"
 msgstr "Sidebar im Profil eines Künstlers"
 
-#: functions.php:127
+#: functions.php:128
+msgid "Chronicles sidebar"
+msgstr "Kalenderblätter Sidebar"
+
+#: functions.php:130
+msgid "Sidebar shown on the chronicles page and all subpages"
+msgstr "Sidebar auf der Kalenderblätter-Seite und deren Unterseiten"
+
+#: functions.php:137
 msgid "Footer Sidebar"
 msgstr "Footer Sidebar"
 
-#: functions.php:129
+#: functions.php:139
 msgid "Sidebar in the page footer. Currently unused."
 msgstr "Sidebar im Seiten-Footer. Z.Z. nicht in Verwendung."
 
-#: functions.php:245
+#: functions.php:261
 msgid "To view this protected post, enter the password below:"
 msgstr ""
 "Um diesen geschützten Post anzuzeigen, geben Sie bitte unten das Passwort "
 "ein:"
 
-#: functions.php:246
+#: functions.php:262
 msgid "Password:"
 msgstr "Passwort:"
 
@@ -339,19 +359,15 @@ msgstr "Mailorder-Katalog"
 msgid "Download our mailorder catalogue"
 msgstr "Unseren Mailorder-Katalog herunterladen"
 
-#: shortcodes/newsletter-signup.php:15
-msgid "Newsletter"
-msgstr "Newsletter"
+#: shortcodes/newsletter-sidebar.php:13
+msgid "Newsletter - BuschFunk posts"
+msgstr "Newsletter - BuschFunk meldet"
 
-#: shortcodes/newsletter-signup.php:16
-msgid ""
-"Subscribe to our newsletter and stay up to date about upcoming concerts, new "
-"products and more information around the BuschFunk."
-msgstr ""
-"Abonniere unseren Newsletter und bleib immer auf dem Laufenden zu neuesten "
-"Veranstaltungen, Produkten und Neuigkeiten aus dem BuschFunk Verlag."
+#: shortcodes/newsletter-sidebar.php:14
+msgid "Subscribe to our newsletter"
+msgstr "Bestelle unseren Newsletter"
 
-#: shortcodes/newsletter-signup.php:20
+#: shortcodes/newsletter-signup.php:13
 msgid "Sign up"
 msgstr "Abonnieren"
 

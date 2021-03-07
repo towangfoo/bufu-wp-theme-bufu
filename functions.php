@@ -73,6 +73,7 @@ function wp_bootstrap_starter_setup() {
     // add shortcode handling
 	add_shortcode('bufu_newsletter_signup', 'wp_bootstrap_shortcode_newsletter_signup' );
 	add_shortcode('bufu_mailorder', 'wp_bootstrap_shortcode_mailorder');
+	add_shortcode('bufu_newsletter_sidebar', 'wp_bootstrap_shortcode_newsletter_sidebar');
 	add_filter( 'widget_text', 'do_shortcode' );
 }
 endif;
@@ -237,6 +238,12 @@ add_filter( 'wp_resource_hints', 'wp_bootstrap_starter_preload', 10, 2 );
 function wp_bootstrap_shortcode_newsletter_signup( $atts, $content, $shortcode_tag ) {
 	ob_start();
 	get_template_part( 'shortcodes/newsletter-signup' );
+	return ob_get_clean();
+}
+
+function wp_bootstrap_shortcode_newsletter_sidebar( $atts, $content, $shortcode_tag ) {
+	ob_start();
+	get_template_part( 'shortcodes/newsletter-sidebar' );
 	return ob_get_clean();
 }
 
