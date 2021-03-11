@@ -295,6 +295,10 @@
     left: 0 !important;
     top: 0 !important;
 }
+.tribe-events .tribe-events-calendar-list-nav {
+    margin-left: -20px;
+    margin-right: -20px;
+}
 
 /******** utility classes ********/
 
