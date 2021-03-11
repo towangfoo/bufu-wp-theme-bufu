@@ -2,10 +2,7 @@
 /**
  * View: Events Bar
  *
- * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/components/events-bar.php
- *
- * See more documentation about our views templating system.
+ * For some reason, the div must be there in order for the filter-bar to be added
  *
  * @link http://m.tri.be/1aiy
  *
@@ -19,39 +16,12 @@ if ( empty( $display_events_bar ) ) {
 	return;
 }
 
-$heading = $disable_event_search
-	? __( 'Views Navigation', 'the-events-calendar' )
-	: sprintf( __( '%s Search and Views Navigation', 'the-events-calendar' ), tribe_get_event_label_plural() );
+$heading = __('Filter events', 'bufu-theme');
 
 $classes = [ 'tribe-events-header__events-bar', 'tribe-events-c-events-bar' ];
-if ( empty( $disable_event_search ) ) {
-	$classes[] = 'tribe-events-c-events-bar--border';
-}
+
 ?>
 
-<div
-	<?php tribe_classes( $classes ); ?>
-	data-js="tribe-events-events-bar"
->
-
-	<h2 class="tribe-common-a11y-visual-hide">
-		<?php echo esc_html( $heading ); ?>
-	</h2>
-
-	<?php if ( empty( $disable_event_search ) ) : ?>
-		<div
-			class="tribe-events-c-events-bar__search-container"
-			id="tribe-events-search-container"
-			data-js="tribe-events-search-container"
-		>
-			<?php $this->template( 'components/events-bar/search' ); ?>
-		</div>
-	<?php endif; ?>
+<div <?php tribe_classes( $classes ); ?> data-js="tribe-events-events-bar">
+	<?php $this->template( 'list/top-bar/datepicker' ); ?>
 </div>
-
-
-<?php
-// IMPORTANT: close the current column and open the next, in order for filter-bar to be in a separate column
-?>
-</div>
-<div class="col-md-8 order-1">

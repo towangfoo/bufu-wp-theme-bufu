@@ -14,7 +14,7 @@
  * @version 5.0.0
  *
  */
-$button_classes = [ 'tribe-filter-bar-c-clear-button', 'btn', 'btn-default', 'btn-pill' ];
+$button_classes = [ 'tribe-filter-bar-c-clear-button', 'btn' , 'btn-default' , 'btn-pill' ];
 
 if ( ! empty( $classes ) ) {
 	$button_classes = array_merge( $button_classes, $classes );
@@ -26,6 +26,6 @@ if ( ! empty( $classes ) ) {
 	data-js="tribe-filter-bar-c-clear-button"
 >
 	<span class="tribe-filter-bar-c-clear-button__text">
-		<?php esc_html_e( 'Clear', 'tribe-events-filter-view' ); ?>
+		<?php esc_html_e( 'Remove filters', 'bufu-theme' ); ?>
 	</span>
 </button>

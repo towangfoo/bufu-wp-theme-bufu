@@ -113,7 +113,7 @@ if ( $is_pill_style ) {
 
 			<?php if ( $is_pill_style ) : ?>
 				<button
-					class="tribe-filter-bar-c-filter__filters-close btn btn-default btn-pill"
+					class="tribe-filter-bar-c-filter__filters-close btn btn-default"
 					type="button"
 					data-js="tribe-filter-bar-c-filter-close"
 				>

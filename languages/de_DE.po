@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-03-07 13:19+0100\n"
-"PO-Revision-Date: 2021-03-07 13:20+0100\n"
+"POT-Creation-Date: 2021-03-11 14:03+0100\n"
+"PO-Revision-Date: 2021-03-11 14:08+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -149,11 +149,11 @@ msgstr ""
 "Abonniere unseren Newsletter und bleib immer auf dem Laufenden zu neuesten "
 "Veranstaltungen, Produkten und Neuigkeiten aus dem BuschFunk Verlag."
 
-#: front-page/next-concerts.php:25 tribe/events/v2/list.php:44
+#: front-page/next-concerts.php:24 tribe/events/v2/list.php:44
 msgid "Concert dates"
 msgstr "Konzerttermine"
 
-#: front-page/next-concerts.php:41
+#: front-page/next-concerts.php:34
 msgid "All concerts"
 msgstr "Alle Konzerte"
 
@@ -467,8 +467,9 @@ msgid "Back to list"
 msgstr "Zurück zur Liste"
 
 #: tribe/events-filterbar/v2_1/components/clear-button.php:29
-msgid "Clear"
-msgstr "Leeren"
+#: tribe/events-filterbar/v2_1/components/filter.php:97
+msgid "Remove filters"
+msgstr "Keine Filter"
 
 #: tribe/events-filterbar/v2_1/components/filter.php:81
 msgid "Open filter"
@@ -479,42 +480,18 @@ msgstr "Filter öffnen"
 msgid "Close filter"
 msgstr "Filter schließen"
 
-#: tribe/events-filterbar/v2_1/components/filter.php:97
-msgid "Remove filters"
-msgstr "Filter entfernen"
+#: tribe/events-filterbar/v2_1/components/pill-button.php:55
+msgid "Remove"
+msgstr "Entfernen"
 
-#: tribe/events-filterbar/v2_1/filter-bar.php:53
-msgid "Filters"
-msgstr "Filter"
-
-#: tribe/events-filterbar/v2_1/filter-bar.php:60
-msgid ""
-"Changing any of the form inputs will cause the list of events to refresh "
-"with the filtered results."
-msgstr ""
+#: tribe/events-filterbar/v2_1/filter-bar.php:51
+#: tribe/events/v2/components/events-bar.php:19
+msgid "Filter events"
+msgstr "Konzerttermine filtern"
 
 #: tribe/events-filterbar/v2_1/filter-bar/actions.php:28
 msgid "Done"
 msgstr "Fertig"
-
-#: tribe/events/v2/components/events-bar.php:23
-msgid "Views Navigation"
-msgstr "Ansichtsmenu"
-
-#: tribe/events/v2/components/events-bar.php:24
-#, php-format
-msgid "%s Search and Views Navigation"
-msgstr "%s Suche und Filtermenu"
-
-#: tribe/events/v2/components/events-bar/search/keyword.php:19
-#, php-format
-msgid "Search for %s"
-msgstr "Suche nach %s"
-
-#: tribe/events/v2/components/events-bar/search/keyword.php:22
-#, php-format
-msgid "Enter Keyword. Search for %s by Keyword."
-msgstr "Suchbegriff angeben. Suche nach %s."
 
 #: tribe/events/v2/list.php:47
 msgid "Loading..."
@@ -543,6 +520,24 @@ msgstr "Mehr zum Künstler"
 #: tribe/events/v2/list/top-bar/datepicker.php:76
 msgid "Select date."
 msgstr "Datum wählen."
+
+#~ msgid "Clear"
+#~ msgstr "Leeren"
+
+#~ msgid "Views Navigation"
+#~ msgstr "Ansichtsmenu"
+
+#, php-format
+#~ msgid "%s Search and Views Navigation"
+#~ msgstr "%s Suche und Filtermenu"
+
+#, php-format
+#~ msgid "Search for %s"
+#~ msgstr "Suche nach %s"
+
+#, php-format
+#~ msgid "Enter Keyword. Search for %s by Keyword."
+#~ msgstr "Suchbegriff angeben. Suche nach %s."
 
 #~ msgid "Post"
 #~ msgid_plural "Posts"

@@ -83,6 +83,7 @@ jQuery( function ( $ ) {
             $('#content').prepend($('<button>').hide().attr({
                 'type': 'button',
                 'id': 'history-back',
+                'class': 'd-none d-md-block',
                 'title': 'Eine Seite zurück'
             }).text('«'));
             $('#history-back').fadeIn(400).on('click', function() {

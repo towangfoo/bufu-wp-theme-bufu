@@ -52,28 +52,12 @@ if ( empty( $disable_event_search ) ) {
 
 		<?php $this->template( 'components/before' ); ?>
 
-		<?php /* @TODO!
+
 		<header <?php tribe_classes( $header_classes ); ?>>
 			<?php $this->template( 'components/messages' ); ?>
+			<?php $this->template( 'components/events-bar' ); ?>
 
-            <?php
-            // NOTE: the filter-bar template is attached to the end of components/events-bar via a hook.
-            // So in order to have them in separate columns, the second col is defined in the components/events-bar template!
-            // @see https://theeventscalendar.com/knowledgebase/k/calendar-template-files-v2/
-            // This seems to be the intended behavior, though it might change in the future
-            ?>
-            <div class="row">
-                <?php  // $this->template( 'components/filter-bar' ); gets added in a separate column, defined in components/events-bar.php  ?>
-                <div class="col-md-4 order-2">
-					<?php $this->template( 'components/events-bar' ); ?>
-                </div>
-            </div>
-
-		</header> */ ?>
-
-        <div style="padding: 2rem 0; background-color: #b9d0f8; color: #0A246A; font-weight: 700; font-size: 1.3rem; text-align: center">
-            @TODO: Filter und Suche
-        </div>
+		</header>
 
 		<div class="tribe-events-calendar-list">
 

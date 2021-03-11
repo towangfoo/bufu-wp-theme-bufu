@@ -202,14 +202,94 @@
 
 /******** filter bar ********/
 
-.tribe-events .tribe-events-header {
+.tribe-events .tribe-events-header.tribe-events-header--has-event-search {
+    display: block;
     margin-left: -15px;
     margin-right: -15px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
+.tribe-events .tribe-events-header.tribe-events-header--has-event-search .tribe-events-header__events-bar,
+.tribe-events .tribe-filter-bar.tribe-filter-bar--horizontal {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-header.tribe-events-header--has-event-search .tribe-events-header__events-bar,
+.tribe-common--breakpoint-medium.tribe-events .tribe-filter-bar.tribe-filter-bar--horizontal {
+    display: inline-block;
+    width: auto !important;
+}
 
+.tribe-events .tribe-events-header .btn-pill {
+    padding: 0.375rem 1rem;
+    font-size: 0.8rem;
+}
+.tribe-events .tribe-events-header .btn-pill.btn-with-selections {
+    padding-right: 2.2rem;
+}
+.tribe-filter-bar .tribe-filter-bar-c-filter--pill .tribe-filter-bar-c-filter__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+}
+.tribe-common--breakpoint-medium .tribe-filter-bar .tribe-filter-bar-c-filter--pill .tribe-filter-bar-c-filter__container {
+    border: 1px solid #888;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.tribe-filter-bar .tribe-filter-bar-c-filter--pill .tribe-filter-bar-c-filter__filters-legend {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.tribe-filter-bar .tribe-filter-bar-c-dropdown .select2-results__option {
+    padding: 3px 6px;
+    color: #333;
+    font-size: 0.8rem;
+}
+.tribe-filter-bar .tribe-filter-bar-c-dropdown .select2-results__option--highlighted[data-selected] {
+    background-color: #ccc;
+    color: #000;
+}
+.tribe-events .tribe-events-header .tribe-filter-bar-c-clear-button,
+.tribe-common--breakpoint-medium .tribe-filter-bar .tribe-filter-bar-c-filter--pill .tribe-filter-bar-c-filter__filters-close {
+    color: #666;
+    border-color: #888;
+}
+.tribe-common--breakpoint-medium .tribe-filter-bar .tribe-filter-bar-c-filter--pill .tribe-filter-bar-c-filter__filters-close {
+    width: 22px;
+    height: 22px;
+}
+.tribe-filter-bar .tribe-filter-bar__selected-filters-header {
+    padding: 0 0 6px;
+}
+.tribe-filter-bar .tribe-filter-bar-c-dropdown .select2-search__field {
+    height: 30px;
+    padding: 0 6px;
+    font-size: 0.8rem;
+}
+
+.tribe-events-header__events-bar .tribe-events-c-top-bar__datepicker button {
+    width: 100%;
+}
+.tribe-events .tribe-events-header .tribe-filter-bar-c-filter__toggle-wrapper,
+.tribe-events .tribe-events-header .tribe-events-c-top-bar__datepicker {
+    margin-top: 1px;
+}
+.tribe-events .tribe-events-header .tribe-events-c-top-bar__datepicker {
+    height: 33px;
+}
+.tribe-events .tribe-events-header .tribe-events-c-top-bar__datepicker-container > .datepicker {
+    /** wrestle against the position done via JS */
+    left: 0 !important;
+    top: 0 !important;
+}
 
 /******** utility classes ********/
 

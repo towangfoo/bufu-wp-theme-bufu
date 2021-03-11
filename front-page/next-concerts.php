@@ -20,15 +20,8 @@ if (count($events) < 1) {
 }
 ?>
 
-<div class="row mt-6 mb-4">
-	<div class="col-md-4">
-		<h2 class="front-page section-title"><?php echo __('Concert dates', 'bufu-theme') ?></h2>
-	</div>
-	<div class="col-md-8 text-right">
-		<div style="padding: 1rem 0; background-color: #b9d0f8; color: #0A246A; font-weight: 700; font-size: 1rem; text-align: center">
-			@TODO: Filter
-		</div>
-	</div>
+<div class="mt-6 mb-4">
+    <h2 class="front-page section-title"><?php echo __('Concert dates', 'bufu-theme') ?></h2>
 </div>
 
 <div class="tribe-common tribe-events">
@@ -38,6 +31,6 @@ if (count($events) < 1) {
 </div>
 
 <div class="mt-4 mb-6 text-center">
-    <a href="/events" class="btn btn-icon-left"><span class="icon">&raquo;</span> <?php echo __('All concerts', 'bufu-theme') ?></a>
+    <a href="/events/" class="btn btn-icon-left"><span class="icon">&raquo;</span> <?php echo __('All concerts', 'bufu-theme') ?></a>
 </div>
 

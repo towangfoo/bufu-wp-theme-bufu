@@ -28,7 +28,6 @@ if ( ! empty( $selected_filters ) ) {
 
 $mobile_control = empty( $mobile_initial_state_control ) ? 'false' : 'true';
 $heading_id     = "tribe-filter-bar__form-heading--$breakpoint_pointer";
-$description_id = "tribe-filter-bar__form-description--$breakpoint_pointer";
 ?>
 
 <div
@@ -43,22 +42,14 @@ $description_id = "tribe-filter-bar__form-description--$breakpoint_pointer";
 		method="post"
 		action=""
 		aria-labelledby="<?php echo esc_attr( $heading_id ); ?>"
-		aria-describedby="<?php echo esc_attr( $description_id ); ?>"
 	>
 
 		<h2
 			class="tribe-filter-bar__form-heading tribe-common-h5 tribe-common-h--alt tribe-common-a11y-visual-hide"
 			id="<?php echo esc_attr( $heading_id ); ?>"
 		>
-			<?php esc_html_e( 'Filters', 'tribe-events-filter-view' ); ?>
+			<?php esc_html_e( 'Filter events', 'bufu-theme' ); ?>
 		</h2>
-
-		<p
-			class="tribe-filter-bar__form-description tribe-common-a11y-visual-hide"
-			id="<?php echo esc_attr( $description_id ); ?>"
-		>
-			<?php esc_html_e( 'Changing any of the form inputs will cause the list of events to refresh with the filtered results.', 'tribe-events-filter-view' ); ?>
-		</p>
 
 		<?php $this->template( 'filter-bar/selections', [ 'selected_filters' => $selected_filters ] ); ?>
 

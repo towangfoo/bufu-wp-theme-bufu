@@ -42,12 +42,12 @@ $adminEditUrl = get_edit_post_link( $event );
     <div class="col-md-4 col-lg-3 tribe-events-calendar-list__event-date">
         <time datetime="<?php echo esc_attr( $event_date_attr ) ?>" aria-hidden="true"></time>
         <div class="row">
-            <div class="col-sm-7 date-column-1 text-center">
+            <div class="col-md-7 date-column-1 text-center">
                 <span class="event-date date-day"><?php echo $startDate->format("d") ?></span>
                 <span class="event-date date-month"><?php echo mb_substr(__($startDate->format("F")), 0, 3) ?></span>
                 <span class="event-date date-year"><?php echo $startDate->format("Y") ?></span>
             </div>
-            <div class="col-sm-5 date-column-2 text-center">
+            <div class="col-md-5 date-column-2 text-center">
                 <span class="event-date date-label"><?php echo __("Starts at", 'bufu-theme') ?></span>
                 <span class="event-date date-time"><?php echo $startDate->format("H:i") ?></span>
             </div>
