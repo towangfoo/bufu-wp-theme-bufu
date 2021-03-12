@@ -244,8 +244,8 @@
 }
 .tribe-common--breakpoint-medium .tribe-filter-bar .tribe-filter-bar-c-filter--pill .tribe-filter-bar-c-filter__container {
     border: 1px solid #888;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 0;
 }
 .tribe-filter-bar .tribe-filter-bar-c-filter--pill .tribe-filter-bar-c-filter__filters-legend {
