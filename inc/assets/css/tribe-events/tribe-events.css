@@ -299,6 +299,9 @@
     margin-left: -20px;
     margin-right: -20px;
 }
+.tribe-common--breakpoint-full.tribe-events .tribe-events-c-top-bar__datepicker-desktop {
+    display: inline-block !important; /** skeleton sets to block !important, messes with line breaks in datepicker button  **/
+}
 
 /******** utility classes ********/
 
