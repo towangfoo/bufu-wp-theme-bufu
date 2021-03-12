@@ -23,7 +23,7 @@
 		<?php
 			the_content();
 
-            // bufu_artists()->echoChildPagesLinks(get_the_ID());
+             bufu_artists()->echoChildPagesLinks(get_the_ID());
 
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bufu-theme' ),
