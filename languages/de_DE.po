@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-03-11 14:03+0100\n"
-"PO-Revision-Date: 2021-03-11 14:08+0100\n"
+"POT-Creation-Date: 2021-03-12 09:57+0100\n"
+"PO-Revision-Date: 2021-03-12 09:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -516,6 +516,24 @@ msgstr "Empfehlung"
 #: tribe/events/v2/list/event/links.php:27
 msgid "More about the artist"
 msgstr "Mehr zum Künstler"
+
+#: tribe/events/v2/list/nav/next-disabled.php:17
+#: tribe/events/v2/list/nav/next-disabled.php:20
+#: tribe/events/v2/list/nav/next.php:19 tribe/events/v2/list/nav/next.php:22
+#, php-format
+msgid "Next %1$s"
+msgstr "Nächster %1$s"
+
+#: tribe/events/v2/list/nav/prev-disabled.php:16
+#: tribe/events/v2/list/nav/prev-disabled.php:19
+#: tribe/events/v2/list/nav/prev.php:19 tribe/events/v2/list/nav/prev.php:22
+#, php-format
+msgid "Previous %1$s"
+msgstr "Vorheriger %1$s"
+
+#: tribe/events/v2/list/nav/today.php:26
+msgid "Today"
+msgstr ""
 
 #: tribe/events/v2/list/top-bar/datepicker.php:76
 msgid "Select date."
