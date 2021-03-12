@@ -12,8 +12,12 @@
 // how many concerts should be shown
 $numConcerts = 5;
 
+// only show concerts with this category
+// @FIXME hardcoded
+$categoryTagSlug = 'buschfunk-praesentiert';
+
 /** @var $events WP_Post[] */
-$events = bufu_artists()->loadNextConcerts(null, $numConcerts);
+$events = bufu_artists()->loadNextConcerts(null, $numConcerts, null, $categoryTagSlug);
 
 if (count($events) < 1) {
 	return;
