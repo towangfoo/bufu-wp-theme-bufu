@@ -12,9 +12,6 @@
 // how many posts to display
 $numPosts = 5;
 
-/** @var $posts WP_Post[] */
-$posts = bufu_artists()->loadRecentPosts( $numPosts );
-
 ?>
 
 <div class="front-box lightgrey front-last-posts">

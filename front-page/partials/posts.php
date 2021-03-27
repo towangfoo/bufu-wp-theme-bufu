@@ -33,13 +33,13 @@ $featuredPost = array_shift($posts);
 		<?php bufu_theme_edit_post_link( $featuredPost ); ?>
 	</div>
 	<div class="col-md-6 list-posts">
-		<?php foreach ($posts as $post) :
-			$categories  = get_the_category_list( ', ', '', $post );
+		<?php foreach ($posts as $postItem) :
+			$categories  = get_the_category_list( ', ', '', $postItem );
         ?>
 			<div class="post-item">
-				<p class="meta"><?php echo $categories ?> - <?php bufu_theme_posted_on( $post ) ?></p>
-				<h3 class="post-title"><a href="<?php echo get_permalink( $post ) ?>"><?php echo get_the_title( $post ) ?></a></h3>
-				<?php bufu_theme_edit_post_link( $post ); ?>
+				<p class="meta"><?php echo $categories ?> - <?php bufu_theme_posted_on( $postItem ) ?></p>
+				<h3 class="post-title"><a href="<?php echo get_permalink( $postItem ) ?>"><?php echo get_the_title( $postItem ) ?></a></h3>
+				<?php bufu_theme_edit_post_link( $postItem ); ?>
 			</div>
 		<?php endforeach; ?>
 
