@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-03-12 09:57+0100\n"
-"PO-Revision-Date: 2021-03-12 09:57+0100\n"
+"POT-Creation-Date: 2021-03-31 11:05+0200\n"
+"PO-Revision-Date: 2021-03-31 11:06+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -133,7 +133,7 @@ msgstr "Den Konsum besuchen"
 msgid "Konsum"
 msgstr "Konsum"
 
-#: front-page/last-posts.php:21 template-parts/content-search.php:39
+#: front-page/last-posts.php:18 template-parts/content-search.php:39
 msgid "BuschFunk posts"
 msgstr "BuschFunk meldet"
 
@@ -149,11 +149,11 @@ msgstr ""
 "Abonniere unseren Newsletter und bleib immer auf dem Laufenden zu neuesten "
 "Veranstaltungen, Produkten und Neuigkeiten aus dem BuschFunk Verlag."
 
-#: front-page/next-concerts.php:24 tribe/events/v2/list.php:44
+#: front-page/next-concerts.php:28 tribe/events/v2/list.php:44
 msgid "Concert dates"
 msgstr "Konzerttermine"
 
-#: front-page/next-concerts.php:34
+#: front-page/next-concerts.php:38
 msgid "All concerts"
 msgstr "Alle Konzerte"
 
@@ -455,6 +455,7 @@ msgid "Discography"
 msgstr "Veröffentlichungen"
 
 #: template-parts/content-single-bufu_artist.php:80
+#: tribe-events/modules/meta/details.php:60
 msgid "Details"
 msgstr "Details"
 
@@ -462,7 +463,49 @@ msgstr "Details"
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Weiterlesen <span class=“meta-nav”>&rarr;</span>"
 
-#: tribe-events/single-event.php:42
+#: tribe-events/modules/meta/details.php:53
+msgid "Time:"
+msgstr "Zeit:"
+
+#: tribe-events/modules/meta/details.php:70
+#: tribe-events/modules/meta/details.php:95
+msgid "Start:"
+msgstr "Beginn:"
+
+#: tribe-events/modules/meta/details.php:75
+#: tribe-events/modules/meta/details.php:103
+msgid "End:"
+msgstr "Ende:"
+
+#: tribe-events/modules/meta/details.php:85
+#: tribe-events/modules/meta/details.php:116
+msgid "Date:"
+msgstr "Datum:"
+
+#: tribe-events/modules/meta/details.php:137
+msgid "Cost:"
+msgstr "Kosten:"
+
+#: tribe-events/modules/meta/details.php:159
+#, php-format
+msgid "%s Tags:"
+msgstr "%s Tags:"
+
+#: tribe-events/modules/meta/details.php:167 tribe-events/single-event.php:73
+#: tribe/events/v2/list/event-flat.php:58
+#: tribe/events/v2/list/event/ticket-link.php:23
+msgid "Order tickets"
+msgstr "Tickets bestellen"
+
+#: tribe-events/modules/meta/venue.php:41
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: tribe-events/modules/meta/venue.php:46
+msgid "Website:"
+msgstr "Website:"
+
+#: tribe-events/single-event.php:44
 msgid "Back to list"
 msgstr "Zurück zur Liste"
 
@@ -502,11 +545,6 @@ msgstr "Lade …"
 msgid "Starts at"
 msgstr "Beginn"
 
-#: tribe/events/v2/list/event-flat.php:58
-#: tribe/events/v2/list/event/ticket-link.php:23
-msgid "Order tickets"
-msgstr "Tickets bestellen"
-
 #: tribe/events/v2/list/event-flat.php:66
 #: tribe/events/v2/list/event/featured-tag.php:20
 msgid "Recommended"
@@ -533,7 +571,7 @@ msgstr "Vorheriger %1$s"
 
 #: tribe/events/v2/list/nav/today.php:26
 msgid "Today"
-msgstr ""
+msgstr "Heute"
 
 #: tribe/events/v2/list/top-bar/datepicker.php:76
 msgid "Select date."

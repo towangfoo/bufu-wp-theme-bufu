@@ -17,13 +17,11 @@
 /** @var $artist WP_Post */
 $artist = $event->bufu_artist;
 
-$adminEditUrl = get_edit_post_link( $event );
-
-if (!$artist && !$adminEditUrl) {
-    return;
-}
 ?>
 <div class="tribe-events-c-small-cta tribe-events-calendar-list__event-links">
-	<a href="<?php echo $artist->permalink ?>" class="btn btn-default btn-pill"><?php echo __("More about the artist", 'bufu-theme') ?></a>
+    <a href="<?php echo esc_url( $event->permalink ); ?>" class="btn btn-default btn-sm btn-pill"><?php echo __('Details', 'bufu-theme'); ?></a>
+    <?php if ($artist) : ?>
+	    <a href="<?php echo $artist->permalink ?>" class="btn btn-default btn-sm btn-pill"><?php echo __("More about the artist", 'bufu-theme') ?></a>
+    <?php endif; ?>
 	<?php bufu_theme_edit_post_link( $post ); ?>
 </div>

@@ -169,6 +169,13 @@
 .tribe-events-single .event-header .tribe-events-schedule .venue {
     margin-left: 1rem;
 }
+.tribe-events-single .event-header .tribe-events-order-tickets {
+    margin-top: 2rem;
+}
+.tribe-events-single .event-header .tribe-events-order-tickets a {
+    color: #fff;
+    border-color: #fff;
+}
 
 .single-tribe_events .tribe-events-single .tribe-events-single-event-description {
     margin-bottom: 0;

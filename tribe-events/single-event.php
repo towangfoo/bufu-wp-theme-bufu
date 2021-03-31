@@ -18,6 +18,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 $events_label_singular = tribe_get_event_label_singular();
 $events_label_plural   = tribe_get_event_label_plural();
 
+$ticketUrl = tribe_get_event_website_url( $event );
+
 /** @var $event WP_Post */
 $event = get_post();
 
@@ -38,9 +40,11 @@ if ( !$image && $artist ) {
 
 <div id="tribe-events-content" class="tribe-events-single">
 
+    <?php /*
 	<p class="tribe-events-back">
-		<a class="btn btn-default btn-pill" href="<?php echo esc_url( tribe_get_events_link() ); ?>">&laquo; <?php _e('Back to list', 'bufu-artists') ?></a>
+		<a class="btn btn-default btn-pill btn-sm" href="<?php echo esc_url( tribe_get_events_link() ); ?>">&laquo; <?php _e('Back to list', 'bufu-theme') ?></a>
 	</p>
+        */ ?>
 
 	<!-- Notices -->
 	<?php tribe_the_notices() ?>
@@ -65,6 +69,12 @@ if ( !$image && $artist ) {
 				<?php echo tribe_events_event_schedule_details( $event_id, '<span class="date">', '</span>' ); ?>
                 <span class="venue"><?php echo $venueCity ?>, <?php echo tribe_get_venue() ?></span>
             </div>
+
+            <?php if (!empty($ticketUrl)) : ?>
+                <div class="tribe-events-order-tickets">
+                    <a href="<?php echo $ticketUrl; ?>" target="_blank" class="btn btn-default btn-pill"><?php esc_html_e( 'Order tickets', 'bufu-theme' ); ?></a>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 
