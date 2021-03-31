@@ -101,6 +101,10 @@
     text-transform: uppercase;
 }
 
+.tribe-events .tribe-events-header__messages .tribe-events-c-messages__message-list {
+    margin-left: 0.5rem;
+}
+
 /** Optimize for small screens */
 @media (max-width: 767px) {
     /** less padding for the date **/
