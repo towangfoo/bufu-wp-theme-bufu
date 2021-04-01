@@ -17,10 +17,23 @@ global $post;
 // @FIXME hardcoded page slug
 $postNameChronicles = 'kalenderblaetter';
 
-$sidebarSlug = '';
+$isChronicles = false;
 if ( $post->post_name === $postNameChronicles ) {
-    $sidebarSlug = 'sidebar-chronicles';
+    $isChronicles = true;
 }
+else if ( !empty( $post->post_parent ) && $post->post_parent !== $post->ID) {
+    // check ancestors as well
+    foreach (get_post_ancestors( $post ) as $aId ) {
+        $aPost = get_post( $aId );
+        if ($aPost->post_name === $postNameChronicles) {
+            $isChronicles = true;
+            break;
+        }
+    }
+}
+
+// determine which sidebar to load
+$sidebarSlug = ($isChronicles) ? 'sidebar-chronicles' : '';
 
 get_header(); ?>
 
