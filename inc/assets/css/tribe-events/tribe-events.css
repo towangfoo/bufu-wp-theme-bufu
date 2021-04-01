@@ -210,6 +210,15 @@
     padding-top: 0;
 }
 
+.single-tribe_events .tribe-events-single .tribe-events-cal-links {
+    margin: 1rem 0;
+}
+.single-tribe_events .tribe-events-single .tribe-events-cal-links a.tribe-events-button {
+    display: inline-block;
+}
+.single-tribe_events .tribe-events-single .tribe-events-cal-links a.tribe-events-button + a.tribe-events-button {
+    margin-left: 0.5rem;
+}
 
 /******** filter bar ********/
 
