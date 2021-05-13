@@ -75,6 +75,9 @@ function wp_bootstrap_starter_setup() {
 	add_shortcode('bufu_mailorder', 'wp_bootstrap_shortcode_mailorder');
 	add_shortcode('bufu_newsletter_sidebar', 'wp_bootstrap_shortcode_newsletter_sidebar');
 	add_filter( 'widget_text', 'do_shortcode' );
+
+	// set default embed width
+	add_filter( 'embed_defaults', 'wp_bootstrap_starter_embed_defaults' );
 }
 endif;
 add_action( 'after_setup_theme', 'wp_bootstrap_starter_setup' );
@@ -251,6 +254,17 @@ function wp_bootstrap_shortcode_mailorder ( $atts, $content, $shortcode_tag ) {
 	ob_start();
 	get_template_part( 'shortcodes/mailorder' );
 	return ob_get_clean();
+}
+
+/**
+ * Set default embed dimensions, e.g. for Youtube videos.
+ * The width of 656px is tailored to the content width of the .col-8 section on the artist profile page
+ * @param $embed_size
+ * @return mixed
+ */
+function wp_bootstrap_starter_embed_defaults ( $embed_size ) {
+	$embed_size['width'] = 656;
+	return $embed_size;
 }
 
 
