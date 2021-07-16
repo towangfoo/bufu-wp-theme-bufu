@@ -11,13 +11,13 @@
 
 ?>
 
-<div class="front-newsletter mt-6 mb-6" id="newsletter-signup">
+<div class="front-newsletter mt-6 mb-6" id="newsletter-bestellen">
 	<div class="row">
 		<div class="col-lg-8 newsletter-container">
-			<h2><?php echo __("Newsletter", 'bufu-theme') ?></h2>
-			<p><?php echo __("Subscribe to our newsletter and stay up to date about upcoming concerts, new products and more information around the BuschFunk.", 'bufu-theme') ?></p>
+			<h2><?php _e("Newsletter", 'bufu-theme') ?></h2>
+			<p><?php _e("Subscribe to our newsletter and stay up to date about upcoming concerts, new products and more information around the BuschFunk.", 'bufu-theme') ?></p>
 
-			<?php echo do_shortcode('[bufu_newsletter_signup]') ?>
+			<?php echo do_shortcode('[bufu_newsletter_signup no-interest2]') ?>
 		</div>
 		<div class="col-lg-4 text-center mailorder-container">
 			<?php echo do_shortcode('[bufu_mailorder]') ?>

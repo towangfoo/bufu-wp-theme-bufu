@@ -240,7 +240,7 @@ add_filter( 'wp_resource_hints', 'wp_bootstrap_starter_preload', 10, 2 );
 
 function wp_bootstrap_shortcode_newsletter_signup( $atts, $content, $shortcode_tag ) {
 	ob_start();
-	get_template_part( 'shortcodes/newsletter-signup' );
+	get_template_part( 'shortcodes/newsletter-signup', null, $atts );
 	return ob_get_clean();
 }
 
