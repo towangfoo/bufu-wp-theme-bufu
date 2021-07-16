@@ -31,7 +31,7 @@ $profileImgHeight = 480;
         </div>
 	</header>
 
-    <div class="row">
+    <div class="row" data-columns="dynamic">
         <div class="col-lg-8">
             <h2 class="second-title"><?php echo sprintf(__("About %s", 'bufu-theme'), get_the_title()); ?></h2>
             <div class="entry-content">
@@ -91,10 +91,17 @@ $profileImgHeight = 480;
         </div>
         <aside class="col-lg-4" role="complementary">
             <?php if ( is_active_sidebar( 'sidebar-profile' ) )  : ?>
-            <div class="widget-area sidebar" id="secondary">
-				<?php dynamic_sidebar( 'sidebar-profile' ); ?>
-            </div>
+            <div class="widget-area sidebar" id="secondary"><?php dynamic_sidebar( 'sidebar-profile' ); ?></div>
             <?php endif; ?>
         </aside>
     </div>
 </article>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        if ($('.sidebar#secondary').is(':empty')) {
+            $('aside[role=complementary]').remove();
+            $('.row[data-columns=dynamic] > .col-lg-8').removeClass('col-lg-8').addClass('col-lg-12');
+        }
+    });
+</script>
