@@ -97,6 +97,7 @@ $profileImgHeight = 480;
     </div>
 </article>
 
+<?php // remove sidebar column, when it contains nothing ?>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         if ($('.sidebar#secondary').is(':empty')) {
