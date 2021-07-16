@@ -73,9 +73,13 @@ $firstArtist = current($artists);
         </div>
     </div>
 
+	<?php if ($numArtists > 1) : ?>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             'use strict';
+
+            // scroll slider to show from the second item
+            $('.slider-horizontal').scrollLeft(<?php echo ($listItemWidth + $listItemMargin) ?>);
 
             // show item from the list as current profile
             $( '.front-featured-artists .list-featured .item' ).click(function(e) {
@@ -113,4 +117,5 @@ $firstArtist = current($artists);
             });
         });
     </script>
+	<?php endif; ?>
 </div>
