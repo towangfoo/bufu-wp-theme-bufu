@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-16 13:18+0200\n"
-"PO-Revision-Date: 2021-07-16 13:19+0200\n"
+"POT-Creation-Date: 2021-07-20 12:28+0200\n"
+"PO-Revision-Date: 2021-07-20 12:29+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -230,13 +230,13 @@ msgstr "Footer Sidebar"
 msgid "Sidebar in the page footer. Currently unused."
 msgstr "Sidebar im Seiten-Footer. Z.Z. nicht in Verwendung."
 
-#: functions.php:275
+#: functions.php:293
 msgid "To view this protected post, enter the password below:"
 msgstr ""
 "Um diesen geschützten Post anzuzeigen, geben Sie bitte unten das Passwort "
 "ein:"
 
-#: functions.php:276
+#: functions.php:294
 msgid "Password:"
 msgstr "Passwort:"
 
@@ -367,7 +367,7 @@ msgstr "Newsletter - BuschFunk meldet"
 msgid "Subscribe to our newsletter"
 msgstr "Bestellen Sie unseren Newsletter"
 
-#: shortcodes/newsletter-signup.php:13
+#: shortcodes/newsletter-signup.php:14
 msgid "Sign up"
 msgstr "Abonnieren"
 
@@ -493,19 +493,28 @@ msgstr "Kosten:"
 msgid "%s Tags:"
 msgstr "%s Tags:"
 
-#: tribe-events/modules/meta/details.php:167 tribe-events/single-event.php:75
+#: tribe-events/modules/meta/details.php:167 tribe-events/single-event.php:76
 #: tribe/events/v2/list/event-flat.php:58
 #: tribe/events/v2/list/event/ticket-link.php:23
 msgid "Order tickets"
 msgstr "Tickets bestellen"
 
-#: tribe-events/modules/meta/venue.php:41
+#: tribe-events/modules/meta/venue.php:40
 msgid "Phone:"
 msgstr "Telefon:"
 
-#: tribe-events/modules/meta/venue.php:46
+#: tribe-events/modules/meta/venue.php:45
 msgid "Website:"
 msgstr "Website:"
+
+#: tribe-events/single-event.php:79
+msgid "Show all concert dates"
+msgstr "Weitere Konzerttermine"
+
+#: tribe-events/single-event.php:80 tribe/events/v2/list/event-flat.php:97
+#: tribe/events/v2/list/event/links.php:24
+msgid "More about the artist"
+msgstr "Mehr zum Künstler"
 
 #: tribe/events-filterbar/v2_1/components/clear-button.php:29
 #: tribe/events-filterbar/v2_1/components/filter.php:97
@@ -547,11 +556,6 @@ msgstr "Beginn"
 #: tribe/events/v2/list/event/featured-tag.php:20
 msgid "Recommended"
 msgstr "Empfehlung"
-
-#: tribe/events/v2/list/event-flat.php:97
-#: tribe/events/v2/list/event/links.php:24
-msgid "More about the artist"
-msgstr "Mehr zum Künstler"
 
 #: tribe/events/v2/list/nav/next-disabled.php:17
 #: tribe/events/v2/list/nav/next-disabled.php:20

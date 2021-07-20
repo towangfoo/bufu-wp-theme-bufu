@@ -210,13 +210,31 @@ function wp_bootstrap_starter_scripts() {
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_scripts' );
 
 /**
- * Add custom theme stylesheets
+ * Add custom theme stylesheets for tribe events plugin (as late as possible)
  */
 function wp_bootstrap_starter_enqueue_tribe_events_styles() {
+	// try to rip out tribe events skeleton BS
+	$ripOut = [ 'tribe-events-v2-single-skeleton', 'tribe-events-views-v2-skeleton' ];
+
+	foreach ($ripOut as $r) {
+		wp_dequeue_style($r);
+	}
+
 	// add custom css
 	wp_enqueue_style('wp-bootstrap-starter-tribe-events', get_template_directory_uri() . '/inc/assets/css/tribe-events/tribe-events.css' );
 }
-add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_enqueue_tribe_events_styles' );
+add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_enqueue_tribe_events_styles', PHP_INT_MAX );
+
+/**
+ * Rip out unneeded styles assets that would be enqueued by tribe events plugin
+ */
+function wp_bootstrap_starter_dequeue_tribe_events_default_styles() {
+	$dequeue = [ 'tribe_asset_enqueue_tribe-events-views-v2-skeleton' ];
+	foreach ($dequeue as $d) {
+		add_filter($d, function() {return false;});
+	}
+}
+add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_dequeue_tribe_events_default_styles', 1 );
 
 /**
  * Add Preload for CDN scripts and stylesheet

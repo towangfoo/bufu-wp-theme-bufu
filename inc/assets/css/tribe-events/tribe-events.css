@@ -135,6 +135,10 @@
 
 /******** single event ********/
 
+.single-tribe_events .tribe-events-ajax-loading {
+    display: none;
+}
+
 .tribe-events-single .event-header {
     margin-left: 0;
     margin-right: 0;
@@ -191,6 +195,9 @@
 .single-tribe_events .tribe-events-single  .tribe-events-event-meta .tribe-events-meta-group {
     background-color: #ccc;
     padding: 2rem;
+    width: auto;
+    flex: 1;
+    margin-right: 0;
 }
 .single-tribe_events .tribe-events-single  .tribe-events-event-meta .tribe-events-meta-group .tribe-events-single-section-title {
     margin-left: -2rem;
@@ -206,8 +213,14 @@
 .single-tribe_events .tribe-events-single  .tribe-events-event-meta .tribe-events-meta-group-details {
     margin-bottom: 3rem;
 }
-.single-tribe_events .tribe-events-single  .tribe-events-event-meta .tribe-events-meta-group-gmap {
-    padding-top: 0;
+.single-tribe_events .tribe-events-single  .tribe-events-event-meta .tribe-events-meta-group-details dl {
+    margin-bottom: 0;
+}
+
+/** Google Map embed **/
+.single-tribe_events .tribe-events-single  .tribe-events-event-meta .tribe-events-venue-map {
+    width: auto;
+    margin: 0 -2rem -2.5rem -2rem; /** make map fill the box (revert padding) **/
 }
 
 .single-tribe_events .tribe-events-single .tribe-events-cal-links {

@@ -36,6 +36,12 @@ if ( !$image && $artist ) {
     $image = get_the_post_thumbnail( $artist, 'thumbnail', ['class' => 'w-100'] );
 }
 
+// show events of artist
+$artistEventsListUrl = '/events';
+if ($artist) {
+	$artistEventsListUrl = '/events?tribe_bufu_artist_filter=' . $artist->ID;
+}
+
 ?>
 
 <div id="tribe-events-content" class="tribe-events-single">
@@ -70,9 +76,15 @@ if ( !$image && $artist ) {
                 <span class="venue"><?php echo $venueCity ?>, <?php echo tribe_get_venue() ?></span>
             </div>
 
-            <?php if (!empty($ticketUrl)) : ?>
+            <?php if (!empty($ticketUrl) || $artist) : ?>
                 <div class="tribe-events-order-tickets">
-                    <a href="<?php echo $ticketUrl; ?>" target="_blank" class="btn btn-default btn-pill"><?php esc_html_e( 'Order tickets', 'bufu-theme' ); ?></a>
+                    <?php if (!empty($ticketUrl)) : ?>
+                        <a href="<?php echo $ticketUrl; ?>" target="_blank" class="btn btn-default btn-pill"><?php esc_html_e( 'Order tickets', 'bufu-theme' ); ?></a>
+					<?php endif; ?>
+                    <?php if ($artist) : ?>
+                        <a href="<?php echo $artistEventsListUrl ?>" class="btn btn-default btn-pill"><?php echo __("Show all concert dates", 'bufu-theme'); ?></a>
+                        <a href="<?php echo get_the_permalink( $artist );  ?>" class="btn btn-default btn-pill"><?php echo __("More about the artist", 'bufu-theme'); ?></a>
+                    <?php endif; ?>
                 </div>
             <?php endif; ?>
         </div>
@@ -80,22 +92,18 @@ if ( !$image && $artist ) {
 
 	<?php while ( have_posts() ) :  the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <div class="row">
-                <div class="col-md-7">
-                    <!-- Event content -->
-					<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
-                    <div class="tribe-events-single-event-description tribe-events-content">
-						<?php the_content(); ?>
-                    </div>
-                    <!-- .tribe-events-single-event-description -->
-					<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
-                </div>
-                <div class="col-md-5">
-                    <!-- Event meta -->
-					<?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
-					<?php tribe_get_template_part( 'modules/meta' ); ?>
-					<?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
-                </div>
+            <!-- Event meta -->
+			<?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
+			<?php tribe_get_template_part( 'modules/meta' ); ?>
+			<?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
+
+            <!-- Event content -->
+			<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
+            <div class="tribe-events-single-event-description tribe-events-content">
+				<?php the_content(); ?>
+            </div>
+            <!-- .tribe-events-single-event-description -->
+			<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 		</div> <!-- #post-x -->
 
         <?php if ( get_post_type() == Tribe__Events__Main::POSTTYPE && tribe_get_option( 'showComments', false ) ) comments_template() ?>
