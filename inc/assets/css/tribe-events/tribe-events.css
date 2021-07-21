@@ -235,6 +235,10 @@
 
 /******** filter bar ********/
 
+.tribe-events .tribe-events-l-container {
+    padding-top: 0;
+}
+
 .tribe-events .tribe-events-header.tribe-events-header--has-event-search {
     display: block;
     margin-left: -15px;

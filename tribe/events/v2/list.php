@@ -23,6 +23,9 @@
  * @var Tribe\Events\Views\V2\Template $this
  */
 
+// The header background image
+$headerImgUrl = get_theme_file_uri('inc/assets/img/bg-events-list-posters.jpg');
+
 $header_classes = [ 'tribe-events-header' ];
 if ( empty( $disable_event_search ) ) {
 	$header_classes[] = 'tribe-events-header--has-event-search';
@@ -41,7 +44,15 @@ if ( empty( $disable_event_search ) ) {
 		data-view-breakpoint-pointer="<?php echo esc_attr( $breakpoint_pointer ); ?>"
 	<?php endif; ?>
 >
-    <h1 class="page-title"><?php echo __("Concert dates", 'bufu-theme') ?></h1>
+
+    <header class="entry-header">
+        <div class="img-centered-absolutely">
+            <img class="d-block w-100" src="<?php echo $headerImgUrl ?>" alt="<?php _e("Concert dates", 'bufu-theme') ?>">
+        </div>
+        <div class="overlay">
+            <h1 class="entry-title"><?php _e("Concert dates", 'bufu-theme') ?></h1>
+        </div>
+    </header>
 
 	<div class="tribe-common-l-container tribe-events-l-container">
 		<?php $this->template( 'components/loader', [ 'text' => __( 'Loading...', 'the-events-calendar' ) ] ); ?>

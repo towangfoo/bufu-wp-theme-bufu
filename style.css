@@ -1532,17 +1532,20 @@ body:not(.theme-preset-active) footer#colophon {
   margin-top: 0.5rem;
 }
 
-.artist-profile .entry-header {
+.artist-profile .entry-header,
+.tribe-events-view--list .entry-header {
   display: block;
   position: relative;
   margin-bottom: 40px;
 }
-.artist-profile .entry-header .overlay {
+.artist-profile .entry-header .overlay,
+.tribe-events-view--list .entry-header .overlay{
   position: absolute;
   bottom: 30px;
   left: 30px;
 }
-.artist-profile .entry-header .overlay .entry-title {
+.artist-profile .entry-header .overlay .entry-title,
+.tribe-events-view--list .entry-header .overlay .entry-title {
   font-size: 1.80rem;
   letter-spacing: -2.2px;
   max-width: 650px;
@@ -1556,22 +1559,27 @@ body:not(.theme-preset-active) footer#colophon {
 }
 
 /** let the stage image always be distinctly wide **/
-.artist-profile .entry-header .img-centered-absolutely {
+.artist-profile .entry-header .img-centered-absolutely,
+.tribe-events-view--list .entry-header .img-centered-absolutely{
   height: 200px;
 }
 @media (min-width: 576px) {
-  .artist-profile .entry-header .img-centered-absolutely {
+  .artist-profile .entry-header .img-centered-absolutely,
+  .tribe-events-view--list .entry-header .img-centered-absolutely {
     height: 240px;
   }
 }
 @media (min-width: 768px) {
-  .artist-profile .entry-header .img-centered-absolutely {
+  .artist-profile .entry-header .img-centered-absolutely,
+  .tribe-events-view--list .entry-header .img-centered-absolutely {
     height: 300px;
   }
-  .artist-profile .entry-header .overlay {
+  .artist-profile .entry-header .overlay,
+  .tribe-events-view--list .entry-header .overlay{
     left: 60px;
   }
-  .artist-profile .entry-header .overlay .entry-title {
+  .artist-profile .entry-header .overlay .entry-title,
+  .tribe-events-view--list .entry-header .overlay .entry-title{
     font-size: 2.10rem;
   }
 }
@@ -1579,10 +1587,12 @@ body:not(.theme-preset-active) footer#colophon {
   .artist-profile .entry-header .img-centered-absolutely {
     height: 380px;
   }
-  .artist-profile .entry-header .overlay {
+  .artist-profile .entry-header .overlay,
+  .tribe-events-view--list .entry-header .overlay{
     left: 100px;
   }
-  .artist-profile .entry-header .overlay .entry-title {
+  .artist-profile .entry-header .overlay .entry-title,
+  .tribe-events-view--list .entry-header .overlay .entry-title{
     font-size: 2.40rem;
   }
 }
@@ -1590,7 +1600,8 @@ body:not(.theme-preset-active) footer#colophon {
   .artist-profile .entry-header .img-centered-absolutely {
     height: 480px;
   }
-  .artist-profile .entry-header .overlay .entry-title {
+  .artist-profile .entry-header .overlay .entry-title,
+  .tribe-events-view--list .entry-header .overlay .entry-title{
     font-size: 2.80rem;
   }
 }
