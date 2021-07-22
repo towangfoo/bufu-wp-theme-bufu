@@ -78,7 +78,7 @@ jQuery( function ( $ ) {
     // add global back button to any page, except these mentioned
     setTimeout(function() {
         var hasHistory = false;
-        var notHere = ['/', '/events/', '/kuenstler/', '/meldungen/', '/posts/', '/kalenderblaetter/', '/kontakt/', '/impressum/', '/datenschutz/'];
+        var notHere = ['/', '/events/', '/events/liste/', '/veranstaltungen/liste/', '/kuenstler/', '/meldungen/', '/posts/', '/kalenderblaetter/', '/kontakt/', '/impressum/', '/datenschutz/'];
         if (notHere.indexOf(window.location.pathname) === -1) {
             $('#content').prepend($('<button>').hide().attr({
                 'type': 'button',

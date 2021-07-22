@@ -14,6 +14,9 @@ use Tribe\Utils\Date_I18n_Immutable as DateVO;
 $event = $args['event'];
 $venue = $event->venues[0];
 
+// a flag to toggle adding og the featured CSS class to an event
+$addFeaturedCssClass = (array_key_exists('addFeaturedCssClass', $args)) ? (bool) $args['addFeaturedCssClass'] : true;
+
 /** @var $artist WP_Post */
 $artist = $event->bufu_artist;
 
@@ -23,7 +26,7 @@ if (!($artist instanceof WP_Post)) {
 }
 
 $container_classes = [ 'row', 'tribe-events-calendar-list__event-row' ];
-if ($event->featured) {
+if ($addFeaturedCssClass && $event->featured) {
 	$container_classes[] = 'tribe-events-calendar-list__event-row--featured';
 }
 $event_classes = tribe_get_post_class( [ 'tribe-events-calendar-list__event' ], $event->ID );

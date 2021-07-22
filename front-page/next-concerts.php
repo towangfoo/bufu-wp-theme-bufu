@@ -30,11 +30,11 @@ if (count($events) < 1) {
 
 <div class="tribe-common tribe-events">
 	<?php foreach ( $events as $event ) : ?>
-		<?php get_template_part( 'tribe/events/v2/list/event-flat', null, ['event' => $event] ); ?>
+		<?php get_template_part( 'tribe/events/v2/list/event-flat', null, [ 'event' => $event ] ); ?>
 	<?php endforeach; ?>
 </div>
 
 <div class="mt-4 mb-6 text-center">
-    <a href="/events/" class="btn btn-icon-left"><span class="icon">&raquo;</span> <?php echo __('All concerts', 'bufu-theme') ?></a>
+    <a href="/veranstaltungen/liste/" class="btn btn-icon-left"><span class="icon">&raquo;</span> <?php echo __('All concerts', 'bufu-theme') ?></a>
 </div>
 
