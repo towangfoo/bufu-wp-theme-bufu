@@ -23,7 +23,8 @@ $numSlides = count($sliderImages);
 $sliderHeight = 480;
 
 $artistsUrl = '/kuenstler/';
-$eventsUrl = '/veranstaltungen/liste';
+$eventsUrl  = '/veranstaltungen/liste';
+$shopUrl    = 'https://konsum.buschfunk.com/';
 
 ?>
 <div class="mb-5">
@@ -57,7 +58,7 @@ $eventsUrl = '/veranstaltungen/liste';
                 </a>
             </div>
             <div class="visual-link konsum">
-                <a href="<?php echo $eventsUrl ?>" class="img-centered-absolutely" style="height: <?php echo $sliderHeight / 2 ?>px" target="_blank" title="<?php echo __('Visit the Konsum', 'bufu-theme') ?>">
+                <a href="<?php echo $shopUrl ?>" class="img-centered-absolutely" style="height: <?php echo $sliderHeight / 2 ?>px" target="_blank" title="<?php echo __('Visit the Konsum', 'bufu-theme') ?>">
                     <img src="<?php echo $imgShop ?>" alt="">
                     <span class="slider-label"><?php echo __('Konsum', 'bufu-theme') ?></span>
                 </a>

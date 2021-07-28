@@ -24,7 +24,8 @@
  */
 
 // The header background image
-$headerImgUrl = get_theme_file_uri('inc/assets/img/bg-events-list-posters.jpg');
+$headerImgUrl = get_theme_file_uri('inc/assets/img/bg-events-list-bow.jpg');
+// $headerImgUrl = get_theme_file_uri('inc/assets/img/bg-events-list-posters.jpg');
 
 $header_classes = [ 'tribe-events-header' ];
 if ( empty( $disable_event_search ) ) {
