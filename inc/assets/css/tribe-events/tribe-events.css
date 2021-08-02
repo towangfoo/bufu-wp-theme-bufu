@@ -6,6 +6,16 @@
 .tribe-events .tribe-events-calendar-list__event-row:last-child {
     margin-bottom: 0;
 }
+@media only screen and (max-width: 480px) {
+    .tribe-events .tribe-events-calendar-list__event-row {
+        flex-wrap: wrap;
+    }
+
+    .tribe-events .tribe-events-calendar-list {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
 
 .tribe-events .tribe-events-calendar-list__month-separator {
     margin: 2rem 1rem;
@@ -238,6 +248,8 @@
 
 .tribe-events .tribe-events-l-container {
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .tribe-events .tribe-events-header.tribe-events-header--has-event-search {

@@ -4,7 +4,7 @@ Author:       Steffen Muecke, quellkunst multimedia
 Author Email: Steffen Muecke <mail@quellkunst.de>
 Author URI:   https://quellkunst.de/
 Description:  Theme for BuschFunk Musikverlag GmbH
-Version:      1.0.0-rc5
+Version:      1.0.0
 License:      GNU General Public License v2 or later
 Text Domain:  bufu-theme
 */
@@ -273,6 +273,16 @@ header#masthead {
   display: inline-block;
   width: 209px;
   height: 74px;
+}
+@media only screen and (max-width: 480px) {
+  header#masthead .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-brand > a > img {
+    width: 180px;
+    height: 63px;
+  }
 }
 
 #masthead .navbar-nav > li a {
@@ -1363,6 +1373,13 @@ body:not(.theme-preset-active) footer#colophon {
 .front-page-text {
   border: 1px solid #eee;
 }
+@media only screen and (max-width: 480px) {
+  .front-page-text {
+    border-color: transparent;
+    padding: 0;
+  }
+}
+
 .front-page-text p:last-child {
   margin-bottom: 0;
 }
@@ -1431,6 +1448,14 @@ body:not(.theme-preset-active) footer#colophon {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media only screen and (max-width: 480px) {
+  .front-newsletter {
+    padding-left: 0;
+  }
+  .front-newsletter .newsletter-container {
+    padding: 20px;
+  }
+}
 
 .front-featured-artists .list-featured {
   background-color: #ed7101;
@@ -1493,6 +1518,23 @@ body:not(.theme-preset-active) footer#colophon {
 .front-featured-artists .portrait-navigation {
   position: relative;
   top: -3rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .front-last-posts {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+  }
+
+  .front-last-posts .nav-link {
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+  }
+  .front-last-posts .nav-tabs .nav-link.active {
+    border-bottom-width: 3px;
+    margin-bottom: -3px;
+  }
 }
 
 .front-last-posts .meta {
