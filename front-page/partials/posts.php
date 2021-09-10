@@ -44,7 +44,7 @@ $featuredPost = array_shift($posts);
 		<?php endforeach; ?>
 
         <div class="mt-5 text-right">
-            <a href="/meldungen/" class="btn btn-default btn-pill"><?php echo __('All posts', 'bufu-theme') ?></a>
+            <a href="/buschfunk-meldet/" class="btn btn-default btn-pill"><?php echo __('All posts', 'bufu-theme') ?></a>
         </div>
 	</div>
 </div>

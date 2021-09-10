@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-20 12:28+0200\n"
-"PO-Revision-Date: 2021-07-20 12:29+0200\n"
+"POT-Creation-Date: 2021-09-10 16:00+0200\n"
+"PO-Revision-Date: 2021-09-10 16:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "Artists starting with \"%s\""
 msgstr "Künstler mit “%s”"
 
-#: archive-bufu_artist.php:23 front-page/header-links.php:44
+#: archive-bufu_artist.php:23 front-page/header-links.php:45
 #: template-parts/content-search.php:47
 msgid "Artist"
 msgid_plural "Artists"
@@ -115,21 +115,21 @@ msgstr "Vorheriger Künstler"
 msgid "Next artist"
 msgstr "Nächster Künstler"
 
-#: front-page/header-links.php:54
+#: front-page/header-links.php:55
 msgid "Show upcoming concerts and events"
 msgstr "Konzerte und Veranstaltungen anzeigen"
 
-#: front-page/header-links.php:56
+#: front-page/header-links.php:57
 msgid "Concert"
 msgid_plural "Concerts"
 msgstr[0] "Konzert"
 msgstr[1] "Konzerte"
 
-#: front-page/header-links.php:60
+#: front-page/header-links.php:61
 msgid "Visit the Konsum"
 msgstr "Den Konsum besuchen"
 
-#: front-page/header-links.php:62
+#: front-page/header-links.php:63
 msgid "Konsum"
 msgstr "Konsum"
 
@@ -149,7 +149,8 @@ msgstr ""
 "Abonnieren Sie unseren Newsletter und bleiben Sie immer auf dem Laufenden zu "
 "neuesten Veranstaltungen, Produkten und Neuigkeiten aus dem BuschFunk Verlag."
 
-#: front-page/next-concerts.php:28 tribe/events/v2/list.php:44
+#: front-page/next-concerts.php:28 tribe/events/v2/list.php:55
+#: tribe/events/v2/list.php:61
 msgid "Concert dates"
 msgstr "Konzerttermine"
 
@@ -456,7 +457,7 @@ msgstr "Veröffentlichungen"
 
 #: template-parts/content-single-bufu_artist.php:80
 #: tribe-events/modules/meta/details.php:60
-#: tribe/events/v2/list/event-flat.php:94
+#: tribe/events/v2/list/event-flat.php:97
 #: tribe/events/v2/list/event/links.php:22
 msgid "Details"
 msgstr "Details"
@@ -493,8 +494,8 @@ msgstr "Kosten:"
 msgid "%s Tags:"
 msgstr "%s Tags:"
 
-#: tribe-events/modules/meta/details.php:167 tribe-events/single-event.php:76
-#: tribe/events/v2/list/event-flat.php:58
+#: tribe-events/modules/meta/details.php:167 tribe-events/single-event.php:82
+#: tribe/events/v2/list/event-flat.php:61
 #: tribe/events/v2/list/event/ticket-link.php:23
 msgid "Order tickets"
 msgstr "Tickets bestellen"
@@ -507,11 +508,11 @@ msgstr "Telefon:"
 msgid "Website:"
 msgstr "Website:"
 
-#: tribe-events/single-event.php:79
+#: tribe-events/single-event.php:85
 msgid "Show all concert dates"
 msgstr "Weitere Konzerttermine"
 
-#: tribe-events/single-event.php:80 tribe/events/v2/list/event-flat.php:97
+#: tribe-events/single-event.php:86 tribe/events/v2/list/event-flat.php:100
 #: tribe/events/v2/list/event/links.php:24
 msgid "More about the artist"
 msgstr "Mehr zum Künstler"
@@ -534,7 +535,7 @@ msgstr "Filter schließen"
 msgid "Remove"
 msgstr "Entfernen"
 
-#: tribe/events-filterbar/v2_1/filter-bar.php:51
+#: tribe/events-filterbar/v2_1/filter-bar.php:53
 #: tribe/events/v2/components/events-bar.php:19
 msgid "Filter events"
 msgstr "Konzerttermine filtern"
@@ -543,16 +544,21 @@ msgstr "Konzerttermine filtern"
 msgid "Done"
 msgstr "Fertig"
 
-#: tribe/events/v2/list.php:47
+#: tribe/events/v2/list.php:59
+#, php-format
+msgid "Concert dates by %s"
+msgstr "Konzerttermine von %s"
+
+#: tribe/events/v2/list.php:67
 msgid "Loading..."
 msgstr "Lade …"
 
-#: tribe/events/v2/list/event-flat.php:51
+#: tribe/events/v2/list/event-flat.php:54
 #: tribe/events/v2/list/event/date.php:36
 msgid "Starts at"
 msgstr "Beginn"
 
-#: tribe/events/v2/list/event-flat.php:66
+#: tribe/events/v2/list/event-flat.php:69
 #: tribe/events/v2/list/event/featured-tag.php:20
 msgid "Recommended"
 msgstr "Empfehlung"

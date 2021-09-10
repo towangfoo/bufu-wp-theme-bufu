@@ -23,6 +23,10 @@
  * @var Tribe\Events\Views\V2\Template $this
  */
 
+// get the currently active artist from the filter
+/** @var $artistFilteredBy array|null */
+$artistFilteredBy = bufu_artists()->getArtistNameFromQueryParamArtistId('tribe_bufu_artist_filter');
+
 // The header background image
 $headerImgUrl = get_theme_file_uri('inc/assets/img/bg-events-list-bow.jpg');
 // $headerImgUrl = get_theme_file_uri('inc/assets/img/bg-events-list-posters.jpg');
@@ -51,7 +55,11 @@ if ( empty( $disable_event_search ) ) {
             <img class="d-block w-100" src="<?php echo $headerImgUrl ?>" alt="<?php _e("Concert dates", 'bufu-theme') ?>">
         </div>
         <div class="overlay">
+			<?php if ($artistFilteredBy !== null) : ?>
+            <h1 class="entry-title with-artist-name"><?php echo sprintf(__("Concert dates by %s", 'bufu-theme'), '<span>' . $artistFilteredBy['name']) . '</span>' ?></h1>
+            <?php else : ?>
             <h1 class="entry-title"><?php _e("Concert dates", 'bufu-theme') ?></h1>
+            <?php endif; ?>
         </div>
     </header>
 

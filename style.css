@@ -1600,6 +1600,10 @@ body:not(.theme-preset-active) footer#colophon {
   font-size: 0.85rem;
 }
 
+.tribe-events-view--list .entry-header .overlay .entry-title.with-artist-name span {
+  display: block;
+}
+
 /** let the stage image always be distinctly wide **/
 .artist-profile .entry-header .img-centered-absolutely,
 .tribe-events-view--list .entry-header .img-centered-absolutely{
@@ -1624,6 +1628,12 @@ body:not(.theme-preset-active) footer#colophon {
   .tribe-events-view--list .entry-header .overlay .entry-title{
     font-size: 2.10rem;
   }
+  .tribe-events-view--list .entry-header .overlay .entry-title.with-artist-name {
+    font-size: 1.60rem;
+  }
+  .tribe-events-view--list .entry-header .overlay .entry-title.with-artist-name span {
+    font-size: 2.10rem;
+  }
 }
 @media (min-width: 992px) {
   .artist-profile .entry-header .img-centered-absolutely {
@@ -1637,6 +1647,12 @@ body:not(.theme-preset-active) footer#colophon {
   .tribe-events-view--list .entry-header .overlay .entry-title{
     font-size: 2.40rem;
   }
+  .tribe-events-view--list .entry-header .overlay .entry-title.with-artist-name {
+       font-size: 1.60rem;
+     }
+  .tribe-events-view--list .entry-header .overlay .entry-title.with-artist-name span {
+    font-size: 2.40rem;
+  }
 }
 @media (min-width: 1200px) {
   .artist-profile .entry-header .img-centered-absolutely {
@@ -1644,6 +1660,12 @@ body:not(.theme-preset-active) footer#colophon {
   }
   .artist-profile .entry-header .overlay .entry-title,
   .tribe-events-view--list .entry-header .overlay .entry-title{
+    font-size: 2.80rem;
+  }
+  .tribe-events-view--list .entry-header .overlay .entry-title.with-artist-name {
+    font-size: 1.60rem;
+  }
+  .tribe-events-view--list .entry-header .overlay .entry-title.with-artist-name span {
     font-size: 2.80rem;
   }
 }

@@ -17,6 +17,8 @@
  * @var boolean      $mobile_initial_state_control Control the mobile initial state via JS if `true`, do not control if `false`.
  *
  * @version 5.0.0.1
+ *
+ * @var $selected_filters array
  */
 
 $classes = [ 'tribe-filter-bar', "tribe-filter-bar--$layout", 'tribe-filter-bar--open' ];
