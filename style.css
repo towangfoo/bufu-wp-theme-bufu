@@ -759,7 +759,11 @@ a img.aligncenter {
 }
 
 .sidebar .widget_bufu_artists_events .date,
-.sidebar .widget_bufu_artists_events .city {
+.sidebar .widget_bufu_artists_events .city,
+.sidebar .widget_bufu_artists_interviews .title,
+.sidebar .widget_bufu_artists_interviews .source,
+.sidebar .widget_bufu_artists_reviews .title,
+.sidebar .widget_bufu_artists_reviews .source {
   display: block;
   color: #fff;
 }
@@ -779,6 +783,12 @@ a img.aligncenter {
 .sidebar .widget_bufu_artists_events .tickets:before {
   content: '\203A ';
   padding-right: 0.3rem;
+}
+
+.sidebar .widget_bufu_artists_interviews .title,
+.sidebar .widget_bufu_artists_reviews .title {
+  font-size: 1.09rem;
+  line-height: 1.25rem;
 }
 
 .sidebar .widget-artists-wall {

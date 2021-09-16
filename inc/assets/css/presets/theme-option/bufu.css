@@ -2686,6 +2686,13 @@ fieldset:disabled a.btn {
   color: #000;
   background-color: transparent;
   border-color: #000;
+}
+
+.post-navigation .nav-previous a,
+.post-navigation .nav-next a,
+.comment-navigation .nav-previous a,
+.comment-navigation .nav-next a,
+.btn-default:not(.no-uppercase) {
   text-transform: uppercase;
 }
 
@@ -3286,6 +3293,10 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
+}
+
+.btn.no-nowrap {
+  white-space: normal !important;
 }
 
 .fade {

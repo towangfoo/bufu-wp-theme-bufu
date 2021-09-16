@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-09-16 12:39+0200\n"
-"PO-Revision-Date: 2021-09-16 12:39+0200\n"
+"POT-Creation-Date: 2021-09-16 16:03+0200\n"
+"PO-Revision-Date: 2021-09-16 16:03+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -176,6 +176,8 @@ msgstr "Neues aus dem Konsum"
 
 #: front-page/shop-links.php:38 inc/template-tags.php:18
 #: template-parts/content-list-bufu_artist.php:23
+#: template-parts/content-single-bufu_interview.php:29
+#: template-parts/content-single-bufu_review.php:30
 msgid "No image"
 msgstr "Kein Bild"
 
@@ -413,9 +415,10 @@ msgstr ""
 "Suchfunktion helfen."
 
 #: template-parts/content-notitle.php:18 template-parts/content-page.php:29
-#: template-parts/content-single-bufu_album.php:49
-#: template-parts/content-single-bufu_album.php:58
+#: template-parts/content-single-bufu_album.php:61
 #: template-parts/content-single-bufu_artist.php:43
+#: template-parts/content-single-bufu_interview.php:54
+#: template-parts/content-single-bufu_review.php:55
 #: template-parts/content-single.php:33 template-parts/content-single.php:42
 #: template-parts/content.php:41
 msgid "Pages:"
@@ -433,14 +436,28 @@ msgstr[0] "Album"
 msgstr[1] "Alben"
 
 #: template-parts/content-search.php:77
-#: template-parts/content-single-bufu_album.php:35
+#: template-parts/content-single-bufu_album.php:36
 #: template-parts/content-single-bufu_artist.php:84
 msgid "Visit in shop"
 msgstr "Im Konsum besuchen"
 
-#: template-parts/content-single-bufu_album.php:30
+#: template-parts/content-single-bufu_album.php:31
 msgid "No album cover"
 msgstr "Kein Albumcover gefunden"
+
+#: template-parts/content-single-bufu_album.php:41
+#: template-parts/content-single-bufu_interview.php:34
+#: template-parts/content-single-bufu_review.php:35
+#, php-format
+msgid "Artist portrait of %s"
+msgstr "Künstlerportrait von %s"
+
+#: template-parts/content-single-bufu_album.php:54
+#: template-parts/content-single-bufu_interview.php:47
+#: template-parts/content-single-bufu_review.php:48
+#, php-format
+msgid "Back to artist portrait of %s"
+msgstr "Zurück zum Künstlerportrait von %s"
 
 #: template-parts/content-single-bufu_artist.php:28
 msgid "Go to artist website"
@@ -466,6 +483,11 @@ msgstr "Details"
 #, php-format
 msgid "Show %d more releases"
 msgstr "%d weitere Veröffentlichungen anzeigen"
+
+#: template-parts/content-single-bufu_review.php:42
+#, php-format
+msgid "by %s"
+msgstr "von %s"
 
 #: template-parts/content.php:37
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
@@ -589,6 +611,10 @@ msgstr "Heute"
 #: tribe/events/v2/list/top-bar/datepicker.php:76
 msgid "Select date."
 msgstr "Datum wählen."
+
+#, php-format
+#~ msgid "Artist profile of %s"
+#~ msgstr "Künstlerportrait von %s"
 
 #, fuzzy
 #~| msgid "Subscribe to our newsletter"
