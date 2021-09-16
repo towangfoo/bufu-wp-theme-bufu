@@ -22,7 +22,7 @@ $author = get_post_meta( $post->ID, '_bufu_artist_review_author', true);
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 d-none d-md-block">
         <?php
             if ($hasThumbnail) :
                 echo $thumbnailHtml;
