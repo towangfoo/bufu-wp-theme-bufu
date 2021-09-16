@@ -48,12 +48,14 @@ $profileImgHeight = 480;
 
             <?php
                 $albums = bufu_artists()->loadAlbumsOfArtist($post->ID, 'release');
-                if (count($albums) > 0) :
-
+			    $numAlbums = count($albums);
+                if ($numAlbums > 0) :
+                    $addCollapseSectionAfterItems = 5;
+                    $addCollapseSection = false;
             ?>
             <div class="discography mt-5 mb-5" id="diskografie">
                 <h2 class="second-title"><?php echo __("Discography", 'bufu-theme') ?></h2>
-                <?php foreach ($albums as $album) :
+                <?php $cnt = 1; foreach ($albums as $album) :
 					$albumUrl     = get_permalink($album);
                     $shopUrl      = get_post_meta( $album->ID, '_bufu_artist_shopUrl', true);
 					$label        = get_post_meta( $album->ID, '_bufu_artist_albumLabel', true);
@@ -85,7 +87,19 @@ $profileImgHeight = 480;
                             </div>
                         </div>
                     </article><!-- #post-## -->
-                <?php endforeach; ?>
+                    <?php if ($cnt === $addCollapseSectionAfterItems) :
+                        /** Hide rest of the albums in a show-more toggle container */
+					    $addCollapseSection = true;
+                    ?>
+                        <div class="collapse" id="toggle-all-releases">
+                    <?php endif; ?>
+                <?php $cnt++; endforeach; ?>
+                <?php if ($addCollapseSection) : ?>
+                    </div>
+                    <div class="btn-toggle-all-releases-wrapper">
+                        <a class="btn btn-default btn-block" id="btn-toggle-all-releases" data-toggle="collapse" data-target="#toggle-all-releases"><?php echo sprintf(__('Show %d more releases', 'bufu-theme'), $numAlbums - $addCollapseSectionAfterItems) ?></a>
+                    </div>
+                    <?php endif; ?>
             </div>
             <?php endif; ?>
         </div>
@@ -97,12 +111,17 @@ $profileImgHeight = 480;
     </div>
 </article>
 
-<?php // remove sidebar column, when it contains nothing ?>
+<?php
+    // 1. remove sidebar column, when it contains nothing
+    // 2. hide releases toggle button after it was pressed
+?>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         if ($('.sidebar#secondary').is(':empty')) {
             $('aside[role=complementary]').remove();
             $('.row[data-columns=dynamic] > .col-lg-8').removeClass('col-lg-8').addClass('col-lg-12');
         }
+
+        $('#btn-toggle-all-releases').click(function() { $('.btn-toggle-all-releases-wrapper').hide(); });
     });
 </script>

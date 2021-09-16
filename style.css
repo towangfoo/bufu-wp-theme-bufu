@@ -1681,6 +1681,11 @@ body:not(.theme-preset-active) footer#colophon {
   margin-top: 2rem;
 }
 
+.artist-profile .discography .btn-toggle-all-releases-wrapper {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
 .artist-profile .sidebar {
   margin-top: 0;
 }
