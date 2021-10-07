@@ -78,6 +78,9 @@ function wp_bootstrap_starter_setup() {
 
 	// set default embed width
 	add_filter( 'embed_defaults', 'wp_bootstrap_starter_embed_defaults' );
+
+	// add filter to always set a prev URL in events lists (apply only to 'list' slug)
+	add_filter( 'tribe_events_views_v2_view_list_prev_url', 'wp_bootstrap_starter_events_list_set_prev_url' );
 }
 endif;
 add_action( 'after_setup_theme', 'wp_bootstrap_starter_setup' );
@@ -297,7 +300,32 @@ function wp_bootstrap_starter_password_form() {
 }
 add_filter( 'the_password_form', 'wp_bootstrap_starter_password_form' );
 
+/**
+ * A filter to avoid having an empty prev_url field in tribe events list template nav.
+ * Instead we decrement the url param 'seite', if we find it.
+ * @param string $url
+ * @return string
+ */
+function wp_bootstrap_starter_events_list_set_prev_url( $url ) {
+	if ( empty($url) ) {
+		$current = home_url($_SERVER['REQUEST_URI']);
+		$matches = [];
+		if ( preg_match('~liste/seite/(\d)+/\?~', $current, $matches) ) {
+			$page = intval($matches[1]);
+			$prevPage = max($page - 1, 1);
 
+			if ( $page !== $prevPage ) {
+				$matchedSubstring = $matches[0];
+				$alteredSubstring = str_replace($page, $prevPage, $matchedSubstring);
+				$alteredUrl = str_replace($matchedSubstring, $alteredSubstring, $current);
+
+				return $alteredUrl;
+			}
+		}
+	}
+
+	return $url;
+}
 
 /**
  * Implement the Custom Header feature.
