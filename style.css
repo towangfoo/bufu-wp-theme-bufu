@@ -4,7 +4,7 @@ Author:       Steffen Muecke, quellkunst multimedia
 Author Email: Steffen Muecke <mail@quellkunst.de>
 Author URI:   https://quellkunst.de/
 Description:  Theme for BuschFunk Musikverlag GmbH
-Version:      1.1.0
+Version:      1.1.1
 License:      GNU General Public License v2 or later
 Text Domain:  bufu-theme
 */
@@ -760,6 +760,8 @@ a img.aligncenter {
 
 .sidebar .widget_bufu_artists_events .date,
 .sidebar .widget_bufu_artists_events .city,
+.sidebar .widget_bufu_artists_events .date,
+.sidebar .widget_bufu_artists_events .show-more,
 .sidebar .widget_bufu_artists_interviews .title,
 .sidebar .widget_bufu_artists_interviews .source,
 .sidebar .widget_bufu_artists_reviews .title,
@@ -770,6 +772,11 @@ a img.aligncenter {
 .sidebar .widget_bufu_artists_events .city {
   font-size: 1.17rem;
   font-weight: 700;
+}
+.sidebar .widget_bufu_artists_events .show-more {
+  font-size: 1.17rem;
+  text-transform: uppercase;
+  letter-spacing: -0.75px;
 }
 .sidebar .widget_bufu_artists_events .tickets {
   color: #fff;

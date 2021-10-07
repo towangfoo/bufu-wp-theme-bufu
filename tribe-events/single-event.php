@@ -39,7 +39,7 @@ if ( !$image && $artist ) {
 // show events of artist
 $artistEventsListUrl = tribe_get_listview_link();
 if ($artist) {
-	$artistEventsListUrl .= '?tribe_bufu_artist_filter=' . $artist->ID;
+	$artistEventsListUrl .= '?tribe_bufu_artist_filter%5B0%5D=' . $artist->ID;
 }
 
 ?>
