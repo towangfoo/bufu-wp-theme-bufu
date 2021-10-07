@@ -311,14 +311,12 @@ function wp_bootstrap_starter_events_list_set_prev_url( $url ) {
 		$current = home_url($_SERVER['REQUEST_URI']);
 		$matches = [];
 		if ( preg_match('~liste/seite/(\d)+/\?~', $current, $matches) ) {
-			$page = intval($matches[1]);
+			$page     = intval($matches[1]);
 			$prevPage = max($page - 1, 1);
-
 			if ( $page !== $prevPage ) {
 				$matchedSubstring = $matches[0];
 				$alteredSubstring = str_replace($page, $prevPage, $matchedSubstring);
 				$alteredUrl = str_replace($matchedSubstring, $alteredSubstring, $current);
-
 				return $alteredUrl;
 			}
 		}
