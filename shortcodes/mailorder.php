@@ -8,8 +8,8 @@
 
 $path = '/wp-content/themes/bufu/var/mailorder/';
 
-$pdfName   = 'BuschFunk_Katalog_2020_2021.pdf';
-$imageName = 'katalog_2020_2021.jpg';
+$pdfName   = 'BuschFunk_Katalog_2021_2022.pdf';
+$imageName = 'katalog_2021_2022.jpg';
 ?>
 
 <div class="sc-mailorder">
