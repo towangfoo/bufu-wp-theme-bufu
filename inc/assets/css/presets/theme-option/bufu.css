@@ -3236,12 +3236,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #008cba;
+  color: #ed7101;
   background-color: transparent;
 }
 
 .btn-link:hover {
-  color: #00526e;
+  color: #bb5d07;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;

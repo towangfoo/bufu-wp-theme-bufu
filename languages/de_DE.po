@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-10-07 15:33+0200\n"
-"PO-Revision-Date: 2021-10-07 15:34+0200\n"
+"POT-Creation-Date: 2021-11-21 09:26+0100\n"
+"PO-Revision-Date: 2021-11-21 09:26+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -193,53 +193,53 @@ msgstr "Primär"
 msgid "Footer"
 msgstr "Folter"
 
-#: functions.php:104
+#: functions.php:107
 msgid "Posts sidebar"
 msgstr "Posts Sidebar"
 
-#: functions.php:106
+#: functions.php:109
 msgid "Sidebar shown with the list of posts"
 msgstr "Sidebar neben der Liste der Mitteilungen"
 
-#: functions.php:113
+#: functions.php:116
 msgid "Artists list sidebar"
 msgstr "Künstler Liste Sidebar"
 
-#: functions.php:115
+#: functions.php:118
 msgid "Sidebar shown with the list of artists"
 msgstr "Sidebar neben der Künstlerliste"
 
-#: functions.php:122
+#: functions.php:125
 msgid "Artist profile sidebar"
 msgstr "Künstlerprofil Sidebar"
 
-#: functions.php:124
+#: functions.php:127
 msgid "Sidebar shown with the artist profile"
 msgstr "Sidebar im Profil eines Künstlers"
 
-#: functions.php:131
+#: functions.php:134
 msgid "Chronicles sidebar"
 msgstr "Kalenderblätter Sidebar"
 
-#: functions.php:133
+#: functions.php:136
 msgid "Sidebar shown on the chronicles page and all subpages"
 msgstr "Sidebar auf der Kalenderblätter-Seite und deren Unterseiten"
 
-#: functions.php:140
+#: functions.php:143
 msgid "Footer Sidebar"
 msgstr "Footer Sidebar"
 
-#: functions.php:142
+#: functions.php:145
 msgid "Sidebar in the page footer. Currently unused."
 msgstr "Sidebar im Seiten-Footer. Z.Z. nicht in Verwendung."
 
-#: functions.php:293
+#: functions.php:296
 msgid "To view this protected post, enter the password below:"
 msgstr ""
 "Um diesen geschützten Post anzuzeigen, geben Sie bitte unten das Passwort "
 "ein:"
 
-#: functions.php:294
+#: functions.php:297
 msgid "Password:"
 msgstr "Passwort:"
 
@@ -414,7 +414,7 @@ msgstr ""
 "Hmm, wir können das leider nicht finden. Vielleicht kann Ihnen die "
 "Suchfunktion helfen."
 
-#: template-parts/content-notitle.php:18 template-parts/content-page.php:29
+#: template-parts/content-notitle.php:18 template-parts/content-page.php:31
 #: template-parts/content-single-bufu_album.php:61
 #: template-parts/content-single-bufu_artist.php:43
 #: template-parts/content-single-bufu_interview.php:54
@@ -424,7 +424,11 @@ msgstr ""
 msgid "Pages:"
 msgstr "Seiten:"
 
-#: template-parts/content-page.php:41
+#: template-parts/content-page.php:24
+msgid "Annual reviews"
+msgstr "Jahresrückblicke"
+
+#: template-parts/content-page.php:43
 #, php-format
 msgid "Edit %s"
 msgstr "%s bearbeiten"
