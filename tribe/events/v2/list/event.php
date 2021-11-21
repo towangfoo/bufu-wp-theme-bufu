@@ -23,12 +23,12 @@ $event_classes = tribe_get_post_class( [ 'tribe-events-calendar-list__event' ], 
 ?>
 <div <?php tribe_classes( $container_classes ); ?>>
 
-    <div class="col-md-4 col-lg-3 tribe-events-calendar-list__event-date">
+    <div class="col-12 col-sm-4 col-lg-3 tribe-events-calendar-list__event-date">
 		<?php $this->template( 'list/event/date', [ 'event' => $event ] ); ?>
 		<?php $this->template( 'list/event/ticket-link', [ 'event' => $event ] ); ?>
     </div>
 
-    <div class="col-md-8 col-lg-9 tribe-events-calendar-list__event-info">
+    <div class="col-12 col-sm-8 col-lg-9 tribe-events-calendar-list__event-info">
 		<article <?php tribe_classes( $event_classes ) ?>>
 			<?php $this->template( 'list/event/featured-tag', [ 'event' => $event ] ); ?>
 			<?php $this->template( 'list/event/venue-tag', [ 'event' => $event ] ); ?>

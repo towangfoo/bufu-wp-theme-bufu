@@ -6,7 +6,7 @@
 .tribe-events .tribe-events-calendar-list__event-row:last-child {
     margin-bottom: 0;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
     .tribe-events .tribe-events-calendar-list__event-row {
         flex-wrap: wrap;
     }
@@ -120,10 +120,13 @@
     /** less padding for the date **/
     .tribe-events .tribe-events-calendar-list__event-date .date-column-1,
     .tribe-events .tribe-events-calendar-list__event-date .date-column-2 {
-        padding: 12px 6px 6px;
+        padding: 6px 6px 3px;
     }
     .tribe-events .tribe-events-calendar-list__event-date .date-month {
         margin: 0.2rem 0;
+    }
+    .tribe-events .tribe-events-calendar-list__event-date .date-year {
+        display: none;
     }
 
     /** Align ticket link to the left  */
@@ -134,6 +137,10 @@
     /** less padding for the content **/
     .tribe-events article.tribe-events-calendar-list__event {
         padding: 12px;
+    }
+
+    .tribe-events .tribe-events-calendar-list__event-tickets a {
+        padding: 4px 12px;
     }
 }
 
@@ -338,8 +345,16 @@
     margin-top: 1px;
 }
 .tribe-events .tribe-events-header .tribe-events-c-top-bar__datepicker {
-    height: 33px;
+    height: 38px;
 }
+
+/** Optimize for small screens */
+@media (max-width: 991px) {
+    .tribe-events .tribe-events-header .tribe-events-c-top-bar__datepicker {
+        height: 28px;
+    }
+}
+
 .tribe-events .tribe-events-header .tribe-events-c-top-bar__datepicker-container > .datepicker {
     /** wrestle against the position done via JS */
     left: 0 !important;
